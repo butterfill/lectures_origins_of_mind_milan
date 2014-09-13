@@ -1,0 +1,38 @@
+---
+layout: 'default2'
+title: 'Lecture 02'
+weburl: ''
+units: []
+lecture_date: '2013/10/10'
+---
+
+include ../../fragments/slide_mixins
+
+- var images = get_images('bees')
+
+mixin title_slide({document:document, images:images})
+
+//- 
+  should every lecture have something on core knowledge and something on social interaction?
+  Just a quick skit on this or that finding, e.g. Baldwin?
+  Would seem to lack coherence!
+  
+
+//- knowledge of colour: the question
+mixin insert_unit({unit:'110', title_slide:true, images:images, handout:false})
+
+//- first something on categorical perception of colour
+//- what is categorical perception of colour?
+mixin insert_unit({unit:'111', title_slide:true, images:images})
+
+//- categorical perception of colour in infancy  
+mixin insert_unit({unit:'121', title_slide:true, images:images})
+  
+//- categorical perception and knowledge
+mixin insert_unit({unit:'131', title_slide:true, images:images})
+  
+//- categorical perception in infants and adults --- how related?
+mixin insert_unit({unit:'141', title_slide:true, images:images})
+
+//- might have gone on to do relation between categorical perception and core knowledge, unit 151 (not yet finished)
+

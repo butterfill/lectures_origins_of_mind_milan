@@ -1,0 +1,35 @@
+---
+layout: 'default2'
+title: 'Lecture 02'
+weburl: ''
+units: []
+lecture_date: '2014/09/23'
+---
+
+include ../../fragments/slide_mixins
+
+- var images = get_images('bees')
+
+mixin title_slide({document:document, images:images})
+
+
+//- * TODO: for Milan: explain habituation somewhere!!!
+
+
+//- objects vs features segmentation, persistence and interaction
++insert_unit({unit:'161', title_slide:false, images:images})
+
+//- Segmentation and the Principles of Object Perception
++insert_unit({unit:'171', title_slide:true, images:images})
+
+//- From Segmentation to Permanence
++insert_unit({unit:'181', title_slide:true, images:images})
+
+//- Permanence
++insert_unit({unit:'191', title_slide:true, images:images})
+
+//- Causal Interaction
++insert_unit({unit:'201', title_slide:true, images:images})
+
+//- The Problem
++insert_unit({unit:'211', title_slide:true, images:images})

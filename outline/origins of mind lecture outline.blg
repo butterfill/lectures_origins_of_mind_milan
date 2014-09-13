@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: origins of mind lecture outline.aux
+The style file: apalike.bst
+Illegal, another \bibdata command---line 65 of file origins of mind lecture outline.aux
+ : \bibdata
+ :         {$HOME/endnote/phd_biblio}
+I'm skipping whatever remains of this command
+Database file #1: $HOME/endnote/phd_biblio.bib
+Warning--empty publisher in robbins:2010_modularity
+You've used 20 entries,
+            1935 wiz_defined-function locations,
+            615 strings with 6886 characters,
+and the built_in function-call counts, 7823 in all, are:
+= -- 760
+> -- 278
+< -- 14
++ -- 94
+- -- 88
+* -- 691
+:= -- 1365
+add.period$ -- 62
+call.type$ -- 20
+change.case$ -- 143
+chr.to.int$ -- 20
+cite$ -- 21
+duplicate$ -- 288
+empty$ -- 593
+format.name$ -- 122
+if$ -- 1544
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 20
+newline$ -- 103
+num.names$ -- 64
+pop$ -- 99
+preamble$ -- 1
+purify$ -- 142
+quote$ -- 0
+skip$ -- 211
+stack$ -- 0
+substring$ -- 612
+swap$ -- 20
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 120
+warning$ -- 1
+while$ -- 63
+width$ -- 0
+write$ -- 263
+(There was 1 error message)

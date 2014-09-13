@@ -1,0 +1,78 @@
+---
+layout: 'default2'
+title: 'Lecture 01'
+weburl: ''
+units: []
+lecture_date: '2014/09/23'
+--- 
+
+include ../../fragments/slide_mixins
+
+- var images = get_images('bees')
+
+mixin title_slide({document:document, images:images})
+
+// the question
+mixin insert_unit({unit:'001', title_slide:false, images:images, handout:true})
+ 
+// myths to mechanisms
+mixin insert_unit({unit:'021', title_slide:true, images:images})
+
+//inbetween mindless behaviour and thought (object permanence)
+mixin insert_unit({unit:'031_short', title_slide:false, images:images})
+
+
+//- two breakthroughs
+mixin insert_unit({unit:'051', title_slide:true, images:images, handout:false})
+
+
+//- course outline
+section.slide 
+  .notes: :t()
+    So the big challenge is to understand how core knowledge and social interaction
+    combine to explain how humans first come to know things.
+  .notes: :t()
+    If you've seen the outline of lectures, you'll know that my approach is to work
+    through what we know about different domains of knowledge.
+  .words: .container_12
+    .grid_3
+      p plan
+    .slide
+      .notes The domains are these.
+      .grid_9
+        .topics
+          p.today objects
+          p causes
+          p colours
+          p languages
+          p communications
+          p minds
+          p actions
+        +blur_('.topics :not(.today)')
+        +row-bkg('.today', 'white')
+        .notes Today's topic is objects.
+        .notes I've chosen to do this first because it's one of the best understood.
+
+
+
+//-
+  // more on object permanence
+  mixin insert_unit({unit:'101', title_slide:true, images:images})
+
+
+ 
+
+//mixin section({title:'*todo*', images:images})
+//
+//section.slide
+//  .words: .container_12: .grid_12
+//    p *todo*
+//    ol
+//      li What is representation? Dretske  [Not sure where this should go]
+//      li nb: representation matters for the view about language acquisition.
+//        span If Fodor on representation then the Bloom private language view looks more plausible.
+//      li Core knowledge (first breakthrough) [use Spelke on principles of object perception]
+//      li Social Interaction (second breakthrough)---use the stuff on word learning from Chapter_02
+
+
+
