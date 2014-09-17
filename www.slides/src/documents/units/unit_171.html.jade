@@ -20,31 +20,6 @@ include ../../../fragments/slide_mixins
 +slide_img('DSC_1028.JPG')
   .notes Recall that the way objects are ordinarily arranged in space, so that one occludes parts of another, prevents us from doing this in any simple way.
 
-// ------------------
-// the principle of cohension
-
-+slide
-  .notes One possible way to segment objects invokes a principle of cohension.
-  p cohesion:
-  p ‘two surface points lie on the same object only if the points are linked by a path of connected surface points’
-  p.right (Spelke 1990)
-  .step1.hide
-    img(src='/img/spelke_1990_fig4ab.png')
-  .step2.hide
-    img(src='/img/spelke_1990_fig4ij.png')
-  p.source Spelke (1990, figure 4)
-  +show('.step1')
-  .notes For example, objects arranged as on your left were percevied by 3-month-olds as two objects, whereas infants treated the displays like that on your right as if they were one object.
-  .notes (This was measured using a habituation paradigm \citep{kestenbaum:1987_perception}.  Infants were habituated to the display.  Then either one object's position changed, or both objects' positions changed but in such a way as to preserve the overall configuration of the two objects.  Infants could show that they perceived the configuration as a single object by looking longer when just one object's position changed.)
-  +showremove('.step2','.step1')
-  .notes Here's a second example.
-  .notes In this case \citep[Experiment 2]{spelke:1989_reaching}, the researchers tested 5-month-old infants using a reaching paradigm.
-  .notes The smaller of the two objects was always closer to the infants.  Infants should reach more often for the smaller, nearer object when they represent the simuli as a single object than when they represent it as two objects.
-  .notes Exploiting this fact, \citet[Experiment 2]{spelke:1989_reaching} showed that infants perceive the stimlui on your left as two objects but the stimlui on your right as a single object.
-  .notes &nbsp;
-  .notes But how does the principle of cohension apply to this moving display? 
-    span ‘When two surfaces are separated by a spatial gap (as in Figure 4a) or undergo relative motions that alter the adjacency relations among points at their border (as in Figure 4i), the surfaces lie on distinct objects.’
-  
 
 // ------------------
 // features
@@ -83,19 +58,32 @@ include ../../../fragments/slide_mixins
   p.source  Needham (1998, figure 7)
 
 
+
 // ------------------
 // common motion
-// *couldn't it all be features? no.
-// \citep{kellman:1983_perception}: 'infants perceive the boundaries of a partly hidden object by analyzing the movements of its surfaces: infants perceived a connected object when its ends moved in a common translation behind the occluder. Infants do not appear to perceive a connected object by analyzing the colors and forms of surfaces: they did not perceive a connected object when its visible parts were stationary, its color was homogeneous, its edges were aligned, and its shape was simple and regular.' 
+// *could it all be features? no.
 
 +slide_middle
-  .notes To see why it couldn't be just features that we use to segment objects, consider some more cases ...
-  p.center Couldn’t it all be features?
+  .notes: :t()
+    Can we fully explain how infants segment objects just by appeal to features?
+    To see why it couldn't be just features that we use to segment objects, consider 
+    some more cases ...
+  p.center Could it all be features?
+  .handout: :t()
+    `infants perceive the boundaries of a partly hidden object by analyzing the movements of 
+    its surfaces: infants perceived a connected object when its ends moved in a common 
+    translation behind the occluder. Infants do not appear to perceive a connected object 
+    by analyzing the colors and forms of surfaces: they did not perceive a connected object 
+    when its visible parts were stationary, its color was homogeneous, its edges were aligned, 
+    and its shape was simple and regular'  \citep{kellman:1983_perception}.
+
 
 +slide
-  .notes Can we fully explain segmentation by appeal to features, at least in infants if not adults too?
-  .notes No, consider the case of an occluded object---a stick behind a box.
-  .notes The movement is enough to convince 4-month-old infants that there is just one stick even though they never see its middle \citep{kellman:1983_perception}.
+  .notes Here is an occluded object---a stick behind a box.
+  .notes: :t()
+    The movement is enough to convince 4-month-old infants that there is just one stick even 
+    though they never see its middle \citep{kellman:1983_perception}.
+    We can discover this by measuring how different displayes cause them to dishabituate.
   //img width is 635px
   +img_clip('spelke_1990_fig2ab.png','rect(0px,320px,214px,0px)')
   p.source Spelke (1990, figure 2)
@@ -133,11 +121,71 @@ include ../../../fragments/slide_mixins
   p.source Kellman & Spelke (1983, figure 14)
 
 
++slide_middle
+  .notes: :t()
+    If infants do not rely only on features to do this, then
+    how do infants segment the objects in the displays we've just been seeing?
+  p.center 
+    span If not by features, then how?  
+    span.slide Principles!
+    .notes: :t()
+      \citet{Spelke:1990jn} suggests that infants rely on a set of principles to segment objects.
+      But what are the principles?
+
++slide
+  .notes Recall this diplay with on object moving behind a stationary block.
+  .notes What kind of principle could be used to identify that the occluded thing is a single object?
+  img(src='/img/kellman_1983_fig13a.png')
+  p.source Kellman & Spelke (1983, figure 13)
+  p.em-above rigidity—‘objects are interpreted as moving rigidly if such an interpretation exists’
+  .notes: :t()
+      \citet{Spelke:1990jn} suggests the principle of rigidity.
+      This principle says that ‘objects are interpreted as moving rigidly if such an interpretation exists’
+      The hypothesis that this principle describes in part how infants segment objects correctly
+      predicts that they will treat the moving occluded stick as a single object.
+  .notes But rigidity is not the only principle we need to explain how infants segment objects ...
+
+
+
+
+// ------------------
+// the principle of cohension
+
++slide
+  .notes: :t()
+    Another principle which seems to be involved in segmenting objects is the principle of cohension.
+    According to this principle, ‘two surface points lie on the same object only if the points are 
+    linked by a path of connected surface points’ \citep{Spelke:1990jn}.
+  p cohesion:
+  p ‘two surface points lie on the same object only if the points are linked by a path of connected surface points’
+  p.right (Spelke 1990)
+  .step1.hide
+    img(src='/img/spelke_1990_fig4ab.png')
+  .step2.hide
+    img(src='/img/spelke_1990_fig4ij.png')
+  p.source Spelke (1990, figure 4)
+  +show('.step1')
+  .notes For example, objects arranged as on your left were percevied by 3-month-olds as two objects, whereas infants treated the displays like that on your right as if they were one object.
+  .notes (This was measured using a habituation paradigm \citep{kestenbaum:1987_perception}.  Infants were habituated to the display.  Then either one object's position changed, or both objects' positions changed but in such a way as to preserve the overall configuration of the two objects.  Infants could show that they perceived the configuration as a single object by looking longer when just one object's position changed.)
+  +showremove('.step2','.step1')
+  .notes Here's a second example.
+  .notes In this case \citep[Experiment 2]{spelke:1989_reaching}, the researchers tested 5-month-old infants using a reaching paradigm.
+  .notes The smaller of the two objects was always closer to the infants.  Infants should reach more often for the smaller, nearer object when they represent the simuli as a single object than when they represent it as two objects.
+  .notes Exploiting this fact, \citet[Experiment 2]{spelke:1989_reaching} showed that infants perceive the stimlui on your left as two objects but the stimlui on your right as a single object.
+  .notes &nbsp;
+  .notes But how does the principle of cohension apply to this moving display? 
+    span ‘When two surfaces are separated by a spatial gap (as in Figure 4a) or undergo relative motions that alter the adjacency relations among points at their border (as in Figure 4i), the surfaces lie on distinct objects.’
+  
+
+
 // ------------------
 // the principles
 
 +slide
-  .notes Spelke proposes that our ability to identify objects depends on some principles (Spelke 1990).
+  .notes: :t()
+     \citet{Spelke:1990jn} proposes that our ability to segment objects depends on four principles.
+     We've already seen two of these in action (rigidy and continuity), and we will shortly see 
+     that a further principle is needed, too.
   p Principles of Object Perception
   .handout \textbf{Principles of Object Perception \citep{Spelke:1990jn}}
   ul.handout.show 
@@ -178,8 +226,14 @@ include ../../../fragments/slide_mixins
   .notes It’s that they are straightforwardly cognitivist in appeal to knowledge and inference.
   .notes Principles are known, and they are used via a process of inference.
   .notes (There’s a nice quote from Fodor on your handout underlining this point.)
-  .handout ‘Chomsky’s nativism is primarily a thesis about knowledge and belief; it aligns problems in the theory of language with those in the theory of knowledge.  Indeed, as often as not, the vocabulary in which Chomsky frames linguistic issues is explicitly epistemological.  Thus, the grammar of a language specifies what its speaker/hearers have to know qua speakers and hearers; and the goal of the child’s language acquisition process is to construct a theory of the language that correctly expresses this grammatical knowledge.’
-  .handout.ctd \citep[p.\ 11]{Fodor:2000cj}
+  .handout.notes: :t()
+    ‘Chomsky’s nativism is primarily a thesis about knowledge and belief; it aligns problems 
+    in the theory of language with those in the theory of knowledge.  Indeed, as often as not, 
+    the vocabulary in which Chomsky frames linguistic issues is explicitly epistemological.  
+    Thus, the grammar of a language specifies what its speaker/hearers have to know qua speakers 
+    and hearers; and the goal of the child’s language acquisition process is to construct a 
+    theory of the language that correctly expresses this grammatical knowledge.’
+  .handout.notes.ctd \citep[p.\ 11]{Fodor:2000cj}
   p.center Marr & Chomsky
 
 +slide_middle
@@ -189,11 +243,11 @@ include ../../../fragments/slide_mixins
     | and we generate expectations from these principles by a process of inference.
   .notes The simple view is that the Spelke principles are just known in whatever sense anything is known.
   .notes The simple view isn’t exactly Spelke’s, but it’s a useful starting point for discussion.
-  .notes &nbsp;
-  .notes Now you might think that the case for these principles is not yet very strong.
-  .notes In which case, asking hard questions about their status is not necessary.
-  .notes So let’s consider further evidence for these principles.
-  .notes We can do this by turning from segmentation (which was our first requirement on knowledge of objects) 
-    span to representing objects as permanent.
+  .notes: :t()
+    Now you might think that the case for these principles is not yet very strong.
+    In that case, asking hard questions about their status would hardly be necessary.
+    So let’s consider further evidence for these principles.
+    We can do this by turning from segmentation (which was our first requirement on knowledge of objects) 
+    to representing objects as permanent.
   p.center the simple view
 

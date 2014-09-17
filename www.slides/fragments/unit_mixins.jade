@@ -102,9 +102,10 @@ mixin display_images_as_slides(unit)
 
 //- see also +clip to modify the clip as an animation
 mixin img_clip(filename, theClip)
+  if typeof(theClip) === 'undefined'
+    - theClip = 'auto' //- i.e. no clip
   div(style='position:relative;')
     img(src='/img/#{filename}', style="clip: #{theClip}; position: absolute; max-width:720px; max-height:550px;")
-
 
 mixin question_mark()
   div(style="position:absolute;top:0px;left:0;z-index:-30;width:100%;margin-top:-150px;")

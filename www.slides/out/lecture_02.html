@@ -271,36 +271,6 @@ var inject = function(){
   <div class="notes">Recall that the way objects are ordinarily arranged in space, so that one occludes parts of another, prevents us from doing this in any simple way.</div>
 </section>
 <!-- -------------------->
-<!-- the principle of cohension-->
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">One possible way to segment objects invokes a principle of cohension.</div>
-        <p>cohesion:</p>
-        <p>‘two surface points lie on the same object only if the points are linked by a path of connected surface points’</p>
-        <p class="right">(Spelke 1990)</p>
-        <div class="step1 hide"><img src="/img/spelke_1990_fig4ab.png"/></div>
-        <div class="step2 hide"><img src="/img/spelke_1990_fig4ij.png"/></div>
-        <p class="source">Spelke (1990, figure 4)</p>
-        <div data-what=".step1" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
-        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">For example, objects arranged as on your left were percevied by 3-month-olds as two objects, whereas infants treated the displays like that on your right as if they were one object.</div>
-        <div class="notes">(This was measured using a habituation paradigm \citep{kestenbaum:1987_perception}.  Infants were habituated to the display.  Then either one object's position changed, or both objects' positions changed but in such a way as to preserve the overall configuration of the two objects.  Infants could show that they perceived the configuration as a single object by looking longer when just one object's position changed.)</div>
-        <div data-what=".step2" data-class="hide" class="slide anim-continue anim-removeclass"></div>
-        <div data-what=".step1" data-class="remove-me" class="slide anim-continue anim-addclass"></div>
-        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">Here's a second example.</div>
-        <div class="notes">In this case \citep[Experiment 2]{spelke:1989_reaching}, the researchers tested 5-month-old infants using a reaching paradigm.</div>
-        <div class="notes">The smaller of the two objects was always closer to the infants.  Infants should reach more often for the smaller, nearer object when they represent the simuli as a single object than when they represent it as two objects.</div>
-        <div class="notes">Exploiting this fact, \citet[Experiment 2]{spelke:1989_reaching} showed that infants perceive the stimlui on your left as two objects but the stimlui on your right as a single object.</div>
-        <div class="notes">&nbsp;</div>
-        <div class="notes">But how does the principle of cohension apply to this moving display? <span>‘When two surfaces are separated by a spatial gap (as in Figure 4a) or undergo relative motions that alter the adjacency relations among points at their border (as in Figure 4i), the surfaces lie on distinct objects.’</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- -------------------->
 <!-- features-->
 <section class="slide">
   <div class="container_12">
@@ -369,15 +339,24 @@ var inject = function(){
 </section>
 <!-- -------------------->
 <!-- common motion-->
-<!-- *couldn't it all be features? no.-->
-<!-- \citep{kellman:1983_perception}: 'infants perceive the boundaries of a partly hidden object by analyzing the movements of its surfaces: infants perceived a connected object when its ends moved in a common translation behind the occluder. Infants do not appear to perceive a connected object by analyzing the colors and forms of surfaces: they did not perceive a connected object when its visible parts were stationary, its color was homogeneous, its edges were aligned, and its shape was simple and regular.' -->
+<!-- *could it all be features? no.-->
 <section class="slide">
   <div class="container_12">
     <div class="grid_12">
       <div class="words">
         <div class="middle">
-          <div class="notes">To see why it couldn't be just features that we use to segment objects, consider some more cases ...</div>
-          <p class="center">Couldn’t it all be features?</p>
+          <div class="notes">Can we fully explain how infants segment objects just by appeal to features?
+To see why it couldn't be just features that we use to segment objects, consider 
+some more cases ...
+          </div>
+          <p class="center">Could it all be features?</p>
+          <div class="handout">`infants perceive the boundaries of a partly hidden object by analyzing the movements of 
+its surfaces: infants perceived a connected object when its ends moved in a common 
+translation behind the occluder. Infants do not appear to perceive a connected object 
+by analyzing the colors and forms of surfaces: they did not perceive a connected object 
+when its visible parts were stationary, its color was homogeneous, its edges were aligned, 
+and its shape was simple and regular'  \citep{kellman:1983_perception}.
+          </div>
         </div>
       </div>
     </div>
@@ -387,9 +366,11 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="notes">Can we fully explain segmentation by appeal to features, at least in infants if not adults too?</div>
-        <div class="notes">No, consider the case of an occluded object---a stick behind a box.</div>
-        <div class="notes">The movement is enough to convince 4-month-old infants that there is just one stick even though they never see its middle \citep{kellman:1983_perception}.</div>
+        <div class="notes">Here is an occluded object---a stick behind a box.</div>
+        <div class="notes">The movement is enough to convince 4-month-old infants that there is just one stick even 
+though they never see its middle \citep{kellman:1983_perception}.
+We can discover this by measuring how different displayes cause them to dishabituate.
+        </div>
         <!--img width is 635px-->
         <div style="position:relative;"><img src="/img/spelke_1990_fig2ab.png" style="clip: rect(0px,320px,214px,0px); position: absolute; max-width:720px; max-height:550px;"/></div>
         <p class="source">Spelke (1990, figure 2)</p>
@@ -456,13 +437,85 @@ var inject = function(){
     </div>
   </div>
 </section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">If infants do not rely only on features to do this, then
+how do infants segment the objects in the displays we've just been seeing?
+          </div>
+          <p class="center"><span>If not by features, then how?  </span><span class="slide">Principles!</span>
+            <div class="notes">\citet{Spelke:1990jn} suggests that infants rely on a set of principles to segment objects.
+But what are the principles?
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Recall this diplay with on object moving behind a stationary block.</div>
+        <div class="notes">What kind of principle could be used to identify that the occluded thing is a single object?</div><img src="/img/kellman_1983_fig13a.png"/>
+        <p class="source">Kellman & Spelke (1983, figure 13)</p>
+        <p class="em-above">rigidity—‘objects are interpreted as moving rigidly if such an interpretation exists’</p>
+        <div class="notes">\citet{Spelke:1990jn} suggests the principle of rigidity.
+This principle says that ‘objects are interpreted as moving rigidly if such an interpretation exists’
+The hypothesis that this principle describes in part how infants segment objects correctly
+predicts that they will treat the moving occluded stick as a single object.
+        </div>
+        <div class="notes">But rigidity is not the only principle we need to explain how infants segment objects ...</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- -------------------->
+<!-- the principle of cohension-->
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Another principle which seems to be involved in segmenting objects is the principle of cohension.
+According to this principle, ‘two surface points lie on the same object only if the points are 
+linked by a path of connected surface points’ \citep{Spelke:1990jn}.
+        </div>
+        <p>cohesion:</p>
+        <p>‘two surface points lie on the same object only if the points are linked by a path of connected surface points’</p>
+        <p class="right">(Spelke 1990)</p>
+        <div class="step1 hide"><img src="/img/spelke_1990_fig4ab.png"/></div>
+        <div class="step2 hide"><img src="/img/spelke_1990_fig4ij.png"/></div>
+        <p class="source">Spelke (1990, figure 4)</p>
+        <div data-what=".step1" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">For example, objects arranged as on your left were percevied by 3-month-olds as two objects, whereas infants treated the displays like that on your right as if they were one object.</div>
+        <div class="notes">(This was measured using a habituation paradigm \citep{kestenbaum:1987_perception}.  Infants were habituated to the display.  Then either one object's position changed, or both objects' positions changed but in such a way as to preserve the overall configuration of the two objects.  Infants could show that they perceived the configuration as a single object by looking longer when just one object's position changed.)</div>
+        <div data-what=".step2" data-class="hide" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".step1" data-class="remove-me" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Here's a second example.</div>
+        <div class="notes">In this case \citep[Experiment 2]{spelke:1989_reaching}, the researchers tested 5-month-old infants using a reaching paradigm.</div>
+        <div class="notes">The smaller of the two objects was always closer to the infants.  Infants should reach more often for the smaller, nearer object when they represent the simuli as a single object than when they represent it as two objects.</div>
+        <div class="notes">Exploiting this fact, \citet[Experiment 2]{spelke:1989_reaching} showed that infants perceive the stimlui on your left as two objects but the stimlui on your right as a single object.</div>
+        <div class="notes">&nbsp;</div>
+        <div class="notes">But how does the principle of cohension apply to this moving display? <span>‘When two surfaces are separated by a spatial gap (as in Figure 4a) or undergo relative motions that alter the adjacency relations among points at their border (as in Figure 4i), the surfaces lie on distinct objects.’</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- -------------------->
 <!-- the principles-->
 <section class="slide">
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="notes">Spelke proposes that our ability to identify objects depends on some principles (Spelke 1990).</div>
+        <div class="notes">\citet{Spelke:1990jn} proposes that our ability to segment objects depends on four principles.
+We've already seen two of these in action (rigidy and continuity), and we will shortly see 
+that a further principle is needed, too.
+        </div>
         <p>Principles of Object Perception</p>
         <div class="handout">\textbf{Principles of Object Perception \citep{Spelke:1990jn}}</div>
         <ul class="handout show">
@@ -515,8 +568,14 @@ var inject = function(){
           <div class="notes">It’s that they are straightforwardly cognitivist in appeal to knowledge and inference.</div>
           <div class="notes">Principles are known, and they are used via a process of inference.</div>
           <div class="notes">(There’s a nice quote from Fodor on your handout underlining this point.)</div>
-          <div class="handout">‘Chomsky’s nativism is primarily a thesis about knowledge and belief; it aligns problems in the theory of language with those in the theory of knowledge.  Indeed, as often as not, the vocabulary in which Chomsky frames linguistic issues is explicitly epistemological.  Thus, the grammar of a language specifies what its speaker/hearers have to know qua speakers and hearers; and the goal of the child’s language acquisition process is to construct a theory of the language that correctly expresses this grammatical knowledge.’</div>
-          <div class="handout ctd">\citep[p.\ 11]{Fodor:2000cj}</div>
+          <div class="handout notes">‘Chomsky’s nativism is primarily a thesis about knowledge and belief; it aligns problems 
+in the theory of language with those in the theory of knowledge.  Indeed, as often as not, 
+the vocabulary in which Chomsky frames linguistic issues is explicitly epistemological.  
+Thus, the grammar of a language specifies what its speaker/hearers have to know qua speakers 
+and hearers; and the goal of the child’s language acquisition process is to construct a 
+theory of the language that correctly expresses this grammatical knowledge.’
+          </div>
+          <div class="handout notes ctd">\citep[p.\ 11]{Fodor:2000cj}</div>
           <p class="center">Marr & Chomsky</p>
         </div>
       </div>
@@ -536,11 +595,12 @@ var inject = function(){
           </div>
           <div class="notes">The simple view is that the Spelke principles are just known in whatever sense anything is known.</div>
           <div class="notes">The simple view isn’t exactly Spelke’s, but it’s a useful starting point for discussion.</div>
-          <div class="notes">&nbsp;</div>
-          <div class="notes">Now you might think that the case for these principles is not yet very strong.</div>
-          <div class="notes">In which case, asking hard questions about their status is not necessary.</div>
-          <div class="notes">So let’s consider further evidence for these principles.</div>
-          <div class="notes">We can do this by turning from segmentation (which was our first requirement on knowledge of objects) <span>to representing objects as permanent.</span></div>
+          <div class="notes">Now you might think that the case for these principles is not yet very strong.
+In that case, asking hard questions about their status would hardly be necessary.
+So let’s consider further evidence for these principles.
+We can do this by turning from segmentation (which was our first requirement on knowledge of objects) 
+to representing objects as permanent.
+          </div>
           <p class="center">the simple view</p>
         </div>
       </div>
@@ -551,14 +611,14 @@ var inject = function(){
   <div class="spacer">&nbsp;</div>
   <div style="" class="title-block">
     <div class="title-container">
-      <h2 class="title1">From Segmentation to Permanence</h2>
+      <h2 class="title1">Permanence</h2>
     </div>
   </div>
 </section>
 <div class="handout">&nbsp;</div>
-<div class="handout">\section{From Segmentation to Permanence}</div>
+<div class="handout">\section{Permanence}</div>
 <div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{From Segmentation to Permanence}</div>
+<div class="notes notes-header-tex">\section{Permanence}</div>
 <!-- **todo** idea of this unit is ot use Spelke et al 1995 on continuity as a bridge from segmentation to permanence-->
 <!-- the two things are conceptually distinct but closely related-->
 <!-- eventual conclusion will be that the same principles explain both-->
@@ -676,16 +736,12 @@ var inject = function(){
   </div>
 </section>
 <section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">The principles of object perception are not just about infant perception; they are also supposed to explain how adults segment objects too.</div>
-          <div class="notes">How is this tested with adults?</div>
-          <div class="notes">It's really neat but I don't have time to tell you about it.</div>
-          <div class="notes">There's something called the object-specific preview effect which can give us a measure of when adult humans' perceptions treat two presentations as the same object.</div>
-          <p class="center">object-specific preview effect</p>
-        </div>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Recall that the continuity principle could be violated in two ways.</div>
+        <div class="notes">We've just seen a `continuity violation'.  Next I want to show you a solidity violation.</div>
+        <div style="position:relative;"><img src="/img/spelke_1995_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
       </div>
     </div>
   </div>
@@ -694,75 +750,7 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <p>***HERE***</p>
-        <p>idea is to </p>
-        <ol>
-          <li>divide unit_191 into permanence and theory parts</li>
-          <li>put just the two experiements on Permanence in unit_191 which becomes 'More Permenance' </li>
-          <li>the point of this unit is that </li>
-          <li>(This creates a problem: can't easily explain drawbridge etc in terms of the spelke principle)</li>
-          <li>then talk about causal interactions</li>
-          <li>Then raise the question about the Simple View, using the second part of unit_191 and the other stuff</li>
-          <li>then show the discrepancy with search for both permanence and causal interactions</li>
-          <li>Switch to lecture 3 for causation, do perception of causation and talk about modularity</li>
-          <li>return to the discrepancy puzzle, suggest identifying core knowledge with modularity</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">So the abilities to segment objects and to represent them as persisting are conceptually distinct.</div>
-          <div class="notes">However it may be that knowledge of a single set of principles underlies both abilities.</div>
-          <div class="notes">This is one of Spelke's brilliant insights.</div>
-          <div class="notes">Where does this leave us?</div>
-          <div class="notes">We still want to know about the status of the principles of object perception.</div>
-          <div class="notes">But we now the question is more pressing.</div>
-          <div class="notes">Because the claim that these principles of object perception explain infants' (and adults', and other primates') performance is now harder to reject.</div>
-          <div class="notes">It's harder to reject because we have converging evidence for the psychological reality of the principles from both segmentation and permanence.</div>
-          <div class="notes">Before we go any further, let me say a little more about the third thing on our list, causal interactions ...</div>
-          <div class="container_12">
-            <div class="grid_6">
-              <p>principles of object perception</p>
-            </div>
-            <div class="grid_2">
-              <p class="stretch-5"> {</p>
-            </div>
-            <div class="grid_4">
-              <div style="margin-top:-30px;margin-left:-50px;" class="kludge">
-                <p>segmentation</p>
-                <p>permanence</p>
-                <p>... (?)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="unit_191" class="slide"><img src="/img/bkg/bees/DSC_0169_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">Permanence</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{Permanence}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{Permanence}</div>
-<!-- idea of this unit is to recap Permanence and stress relevance of principles-->
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Evidence that infants represent unperceived objects from around four months 
+        <div class="notes">Further evidence that infants represent unperceived objects from around four months 
 includes Baillargeon's famous drawbridge study.
         </div>
         <div class="notes">These are the test events from Experiment 1 of Baillargeon et al's 1987 study.</div>
@@ -796,10 +784,16 @@ includes Baillargeon's famous drawbridge study.
         <p class="right">source: Baillargeon et al (1987, figure 2)</p>
         <div data-what=".img2-2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">Some have been critical of the methods used in this experiment.</div>
-        <div class="notes">But not everything hangs on this experiment.</div>
-        <div class="notes">Fortunately there are at least a hundred further experiments which provide evidence pointing in the same direction.</div>
-        <div class="notes">Here we'll look at just one more experiment.</div>
+        <div class="notes">I'm presenting this experiment as showing that infants represent objects as persisting, and do so
+in accordance with the Principle of Continuity.  However, the experiment is also about 
+causal interactions between objects.  After all, infants are demonstrating sensitivity to
+the fact that a solid object must stop the drawbridge from rotating all the way back.
+        </div>
+        <div class="notes">Some have been critical of the methods used in this experiment.
+But not everything hangs on this experiment.
+Fortunately there are at least a hundred further experiments which provide evidence pointing in the same direction.
+Here we'll look at just one more experiment.
+        </div>
       </div>
     </div>
   </div>
@@ -809,6 +803,9 @@ includes Baillargeon's famous drawbridge study.
     <div class="container_12">
       <div class="grid_12">
         <div class="notes">Here is another way of demonstrating object permanence.</div>
+        <div class="notes">This experiment will suggest, incidentally, that the principles we have seen---continuity,
+rigidity and the rest---don't fully explain how infants succeed in representing objects as persisting.
+        </div>
         <div class="notes">The subjects were 4 month old infants.</div>
         <div class="notes">They were shown a large object disappearing inside a small conatiner, or behind a narrow screen.</div>
         <div style="overflow:hidden;max-height:210px;" class="img071-1"><img src="/img/wang_2004_fig1a.png" style="max-width:700px"/></div>
@@ -943,23 +940,30 @@ includes Baillargeon's famous drawbridge study.
     <div class="grid_12">
       <div class="words">
         <div class="middle">
-          <div class="notes">The simple view is that the principles of object perception that Spelke and others have identified are things that we know,</div>
-          <div class="notes">and that we generate expectations from these principles by a process of inference.</div>
-          <p class="center"><span class="step2 hide">scientific </span><span class="linethrough1">intuitive</span><span> reservations about the simple view</span></p>
-          <div class="notes">Is this plausible?</div>
-          <div class="notes">It is perhaps hard to accept that four-month-old infants are in the business of formulating and revising hypotheses.</div>
-          <div class="notes">(Come to think of it, it’s quite hard to accept that adults typically acquire representations of unperceived objects by formulating and revising hypotheses.)</div>
-          <div class="notes">Also we might think of inference as something that a detective does.  It is not obvious that the same process is occurring in infants.</div>
-          <div class="notes">But these considerations are narrowly intuitive.</div>
-          <div class="notes">Science sometimes indicates that intuitions are wrong, even intuitions about very fundamental things like space and time.</div>
-          <div class="notes">And, most importantly, if infants aren’t making inferences on the basis of knowlegde, what are they doing that enables them to pass violation-of-expectation tasks?</div>
-          <div data-what=".linethrough1" data-attr="text-decoration:line-through" class="slide anim-continue anim-attribute"></div>
-          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-          <div class="notes">I think we shouldn't try to challenge the simple view on the basis of intution.</div>
-          <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
-          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-          <div class="notes">And we don't need to because there are also scientific reasons for rejecting the simple view.</div>
-          <div class="notes">One set of reasons concerns the apparent discrepancy between looking times and manual search ...</div>
+          <div class="notes">So the abilities to segment objects and to represent them as persisting are conceptually distinct.</div>
+          <div class="notes">However it may be that knowledge of a single set of principles underlies both abilities.</div>
+          <div class="notes">This is one of Spelke's brilliant insights.</div>
+          <div class="notes">Where does this leave us?</div>
+          <div class="notes">We still want to know about the status of the principles of object perception.</div>
+          <div class="notes">But we now the question is more pressing.</div>
+          <div class="notes">Because the claim that these principles of object perception explain infants' (and adults', and other primates') performance is now harder to reject.</div>
+          <div class="notes">It's harder to reject because we have converging evidence for the psychological reality of the principles from both segmentation and permanence.</div>
+          <div class="notes">Before we go any further, let me say a little more about the third thing on our list, causal interactions ...</div>
+          <div class="container_12">
+            <div class="grid_6">
+              <p>principles of object perception</p>
+            </div>
+            <div class="grid_2">
+              <p class="stretch-5"> {</p>
+            </div>
+            <div class="grid_4">
+              <div style="margin-top:-30px;margin-left:-50px;" class="kludge">
+                <p>segmentation</p>
+                <p>permanence</p>
+                <p>... (?)</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -969,65 +973,7 @@ includes Baillargeon's famous drawbridge study.
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="notes">You've explored this topic in detail in essays and seminars, so I'll be quick here.</div>
-        <div class="notes">Very crudely, the position is this.</div>
-        <p>Responses to the occlusion of a desirable object</p>
-        <ul>
-          <li>look (from 2.5 months)
-            <p class="right grey-text">(Aguiar & Baillargeon 1999)</p>
-          </li>
-          <li>reach (7--9 months)
-            <p class="right grey-text">(Shinskey & Munakata 2001)</p>
-          </li>
-        </ul>
-        <div class="notes">The attraction of the simple view is that it explains the looking.</div>
-        <div class="notes">The problem for the simple view is that it makes exactly the wrong prediction about the reaching.</div>
-        <div class="notes">A lot of experiments have attempts to pin the discrepancy on extraneous factors like task demands.</div>
-        <div class="notes">But none of these attempts have succeeded.</div>
-        <div class="slide">
-          <div class="notes">As Jeanne Shinskey, one of the researchers most dedicated to this issue says, </div>
-          <p class="em-above handout show">‘action demands are not the only cause of failures on occlusion tasks’</p>
-          <div class="handout ctd">\citep[p.\ 291]{shinskey:2012_disappearing}</div>
-          <p class="right">Shinskey (2012, p. 291)</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Commenting on discrepancies between preferential looking and visual search, this is an early view (contrast \citealp{Spelke:2001pg}).</div>
-        <p class="handout show">‘These dissociations cast doubt on the view that visual search and preferential looking depend on a single mechanism […] operating in accord with a single set of principles. [...]</p>
-        <p class="em-above handout ctd show">‘infants’ ability to perceive object identity over occlusion, as assessed in preferential looking tasks, and to track objects visually, as assessed in visual search tasks, do not draw on a <span class="highlight1">single system of knowledge</span><span>. [...]</span></p>
-        <div data-what=" .highlight1" data-class="invert" class="slide anim-continue anim-addclass"></div>
-        <div data-what=" .highlight1" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
-        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">But what is a system of knowlegde?  What is this notion of system?</div>
-        <div class="notes">What Spelke goes on to say offers a clue.</div>
-        <div class="slide">
-          <p class="em-above handout show">‘In Fodor’s (1983) terms, visual tracking and preferential looking each may depend on <span class="highlight2">modular mechanisms</span><span>.’</span></p>
-          <div class="handout ctd">\citep[p.\ 137]{spelke:1995_spatiotemporal}</div>
-          <p class="right">Spelke et al (1995, p. 137)</p>
-          <div data-what=" .highlight2" data-class="bkg-words-highlight-yellow" class="slide anim-continue anim-addclass"></div>
-          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-          <div class="notes">So at this point it seems Spelke is suggesting that knowledge of the principles of object perception may be modular.</div>
-          <div class="notes">What is modularity?  We'll consider this notion later.</div>
-          <div class="notes">For now I want us to take two things.</div>
-          <div class="notes">First, the discrepancy between looking and searching as measures of object representations makes trouble for the simple view (according to which the principles of object perception are simply known).</div>
-          <div class="notes">Second, the solution may be something called 'modularity' which we don't yet understand.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- non-humans-->
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Object permanence is found in nonhuman animals including</div>
+        <div class="notes">As an aside I wanted to mention that object permanence is found in nonhuman animals including</div>
         <p class="handout show">Object permanence is found in nonhuman animals including</p>
         <div class="handout notes">\begin{enumerate}</div>
         <ul>
@@ -1079,7 +1025,8 @@ includes Baillargeon's famous drawbridge study.
     </div>
   </div>
 </section>
-<section id="unit_201" class="slide"><img src="/img/bkg/bees/DSC_0170_crop.jpg" class="bkg"/>
+<!-- +insert_unit({unit:'191', title_slide:true, images:images})-->
+<section id="unit_201" class="slide"><img src="/img/bkg/bees/DSC_0169_crop.jpg" class="bkg"/>
   <div class="spacer">&nbsp;</div>
   <div style="" class="title-block">
     <div class="title-container">
@@ -1255,7 +1202,71 @@ includes Baillargeon's famous drawbridge study.
           <div class="handout ctd">\citep[p.\ 175]{Carey:1994bh}</div>
           <p class="right">(Carey and Spelke 1994: 175)</p>
           <div class="notes">I think there's something here that should be uncontroversial, and something that's more controversial.</div>
+          <div class="notes">But first let me recap ...</div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unit_206" class="slide"><img src="/img/bkg/bees/DSC_0170_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Recap and Questions</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Recap and Questions}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Recap and Questions}</div>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">As I said at the start, knowledge of objects depends on abilities to (i) segment objects, (ii) represent them as persisting and (iii) track their interactions.</div>
+        <p>Three requirements</p>
+        <ul>
+          <li>segment objects</li>
+          <li>represent objects as persisting</li>
+          <li>track objects’ interactions</li>
+        </ul>
+        <div class="notes handout">\emph{Question 1}  How do humans come to meet the three requirements on knowledge of objects?</div>
+        <div class="notes">Until quite recently it was held, following Piaget and others, that these three abilities appeared relatively late in development.  </div>
+        <div class="notes">However, as we saw last week, more recent investigations provide strong evidence that all three abilities are present in humans from around four months of age or earlier.  </div>
+        <div class="notes">Infants' looking behaviours indicate that they have expectations concerning segmentation, persistence and causal interactions.  </div>
+        <div class="notes handout">\emph{Discovery 1} Infants manfiest all three abilities from around four months of age or earlier.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">
+          We've seen that infants' abilities to segement objects, represent them as persisting and track their causal 
+          interactions can be described by appeal to a single set of principles, 
+          the principles of cohension, boundedness, rigidity and no action at a distance.
+        </div>
+        <div class="notes">This suggests that 
+          <div class="handout">\emph{Discovery 2} Although abilities to segment objects, to represent them as persisting through occlusion and  to track their causal interactions are conceptually distinct, they may all be consequences of a single mechanism (in humans and perhaps in other animals).</div>
+        </div>
+        <div class="notes">Spelke suggests, further, that these principles of object perception explain infants' looking behaviours.</div>
+        <div class="notes">This means we must ask
+          <div class="handout">\emph{Question 2} What is the relation between the principles of object perception and infants’ looking behaviours?</div>
+        </div>
+        <p>Principles of Object Perception</p>
+        <ul class="blur1">
+          <li>cohesion<span class="step2 grey-text">—‘two surface points lie on the same object only if the points are linked by a path of connected surface points’</span></li>
+          <li>boundedness<span class="step3 grey-text">—‘two surface points lie on distinct objects only if no path of connected surface points links them’</span>
+            <!-- … the boundedness principle implies that … two distinct objects cannot interpenetrate.’-->
+          </li>
+          <li>rigidity<span class="step4 grey-text">—‘objects are interpreted as moving rigidly if such an interpretation exists’</span></li>
+          <li>no action at a distance<span class="step5 grey-text">—‘separated objects are interpreted as moving independently of one another if such an interpretation exists’</span></li>
+        </ul>
+        <p class="right">(Spelke 1990)</p>
+        <div class="notes">Let me explain this question.</div>
         <div data-what=".blur1" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div class="slide">
@@ -1263,29 +1274,66 @@ includes Baillargeon's famous drawbridge study.
           <div class="notes">That is, someone who knew the principles and had unlimited cognitive resources could use the principles to infer the track physical objects through simple causal interactions like those we've been considering.</div>
           <div class="notes">(So formal adequacy is a question of what is possible in principle.)</div>
           <div class="notes">I don't think we should question this.</div>
-          <p class="em-above">Spelke's principles of object perception</p>
           <ul>
             <li>formal adequacy</li>
             <li class="slide">descriptive adequacy
-              <div class="notes">I also want to allow that Spelke's principles are \emph{descriptively adeqaute}.</div>
-              <div class="notes">That is, they successfully describe how infants, adults and nonhumans deal with various situations.</div>
-              <div class="notes">We can think of this in terms of \emph{as if}: it is as if these individuals are using the principles.</div>
-              <div class="notes">But we have yet to come to what really matters to Spelke and to us.</div>
-              <div class="notes">For accepting formal and descriptive adequacy is consistent with denying that Carey and Spelke's claim that ‘A single system of knowledge … appears to [does] underlie object perception and physical reasoning’ \citep[p.\ 175]{Carey:1994bh}.</div>
-              <div data-what=".blur1" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
-              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+              <div class="notes">I also want to allow that Spelke's principles are \emph{descriptively adeqaute}.
+That is, they successfully describe how infants, adults and nonhumans deal with various situations.
+We can think of this in terms of \emph{as if}: it is as if these individuals are using the principles.
+But we have yet to come to what really matters to Spelke and to us.
+For accepting formal and descriptive adequacy is consistent with denying that Carey and Spelke's claim that ‘A single system of knowledge … appears to [does] underlie object perception and physical reasoning’ \citep[p.\ 175]{Carey:1994bh}.
+              </div>
               <div class="notes">That's because formal and descriptive adequacy leave open the question of what mechanisms are involved in tracking physical objects' causal interactions.</div>
-              <div data-what=".blur1" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
-              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-            </li>
-            <li class="slide">teleology
-              <div class="notes">We might claim, further, that the principles of object perception describe the teleological function of the cogntive systems that track physical interactions.</div>
             </li>
             <li class="slide">mechansim 
-              <div class="notes">Finally, we might claim that these principles are realised in the cognitive mechansisms invovled in object tracking.</div><span class="slide">(e.g. the simple view)
-                <div class="notes">In particular, following the simple view, we might claim that the principles are known, and that we detect physically impossible event by making inferences from these principles.</div></span>
+              <div class="notes">Finally, we might claim that these principles are realised in the cognitive mechansisms invovled in object tracking.</div>
+              <div class="notes">It just here that we have to face the second question, What is the relation between the principles of object perception and infants’ looking behaviours?.</div><span class="slide">(e.g. the simple view)<span class="notes">In answer to Q2, I suggested that we start with the simple view.  </span><span class="notes handout">The \emph{simple view} is the view that the principles of object perception are things that we know, and we generate expectations from these principles by a process of inference.</span><span class="notes">The attraction of the Simple View is that it promises to explain infants' sensitivity to objects' boundaries, their persistence and their causal interactions as manifested in a variety of looking behaviours.</span><span class="notes">But, as we're about to see, the Simple View is completely wrong.</span></span>
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unit_207" class="slide"><img src="/img/bkg/bees/DSC_0200_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">A Problem</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{A Problem}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{A Problem}</div>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">As just mentioned, the Simple View is the view that the principles of object perception are things that we know, and we generate expectations from these principles by a process of inference..</div>
+          <p class="center"><span class="hide step4">scientific </span><span class="hide step3 linethrough1">intuitive</span><span class="hide step3"> arguments </span><span class="hide step2">against </span><span>the simple view  </span></p>
+          <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">Why must we reject the simple view?</div>
+          <div data-what=".step3" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">You might have intuitive arguments against it.
+It is perhaps hard to accept that four-month-old infants are in the business of formulating and revising hypotheses.
+(Come to think of it, it’s quite hard to accept that adults typically acquire representations of unperceived objects by formulating and revising hypotheses.)
+Also we might think of inference as something that a detective does.  It is not obvious that the same process is occurring in infants.
+But these considerations are narrowly intuitive.
+Science sometimes indicates that intuitions are wrong, even intuitions about very fundamental things like space and time.
+And, most importantly, if infants aren’t making inferences on the basis of knowlegde, what are they doing that enables them to pass violation-of-expectation tasks?
+          </div>
+          <div data-what=".linethrough1" data-attr="text-decoration:line-through" class="slide anim-continue anim-attribute"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">I think we shouldn't try to challenge the simple view on the basis of intution.</div>
+          <div data-what=".step4" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">And we don't need to because there are also scientific reasons for rejecting the simple view.</div>
+          <div class="notes">One set of reasons concerns the apparent discrepancy between looking times and manual search ...</div>
         </div>
       </div>
     </div>
@@ -1296,10 +1344,127 @@ includes Baillargeon's famous drawbridge study.
     <div class="grid_12">
       <div class="words">
         <div class="middle">
-          <div class="notes">We've already seen some objections to the simple view.</div>
-          <div class="notes">Thinking about causal interactions allows us to make those objections more forcefully.</div>
-          <p class="center">against the simple view  </p>
+          <div class="notes">*(The basic idea is to say there's a discrepancy regarding BOTH (a) permanence and (b) 
+causal interactions)
+          </div>
+          <p class="center">conflicting evidence: permanence</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/baillargeon_1987_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Baillargeon et al 1987, figure 1</p>
+        <div class="notes">Recall this experiment which used habituation to demonstrate infants' abilities to represent
+objects as persiting while unperceived (in this case, because occluded).
+Infants can do this sort of task from 2.5 months or earlier \citep{Aguiar:1999jq}.
+        </div>
+        <div class="notes">But what happens if instead of measuring how infants look, we measure how they reach?
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">\citet{Shinskey:2001fk} did just this.
+Here you can see their appratus.
+They had a screen that infants could pull forwards to get to an object that was sometimes
+hidden behind it.
+They made two comparisons.
+First, were infants more likely to pull the screen forwards when an object was placed behind it?
+Second, were how did infants' performance compare when the barrier was not opaque but transparent?
+        </div>
+        <div style="position:relative;"><img src="/img/shinskey_munakata_2001_fig1.png" style="clip: undefined; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Shinskey and Munakata 2001, figure 1</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Here are their results with 7-month old infants.
+        </div>
+        <div style="position:relative;"><img src="/img/shinskey_munakata_2001_fig2.png" style="clip: undefined; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Shinskey and Munakata 2001, figure 2</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Now we have the beginnings of a problem.
+The problem is that, if the Simple View is right, infants should succeed in tracking persisting
+objects regardless of whether we measure their eye movements or their reaching actions.
+But there is a gap of around five months between looking and reaching.
+        </div>
+        <p>Responses to the occlusion of a desirable object</p>
+        <ul>
+          <li>look (from 2.5 months)
+            <p class="right grey-text">(Aguiar & Baillargeon 1999)</p>
+          </li>
+          <li>reach (7--9 months)
+            <p class="right grey-text">(Shinskey & Munakata 2001)</p>
+          </li>
+        </ul>
+        <div class="notes">The attraction of the simple view is that it explains the looking.
+The problem for the simple view is that it makes exactly the wrong prediction about the reaching.
+        </div>
+        <div class="notes">Can we explain the discrepancy in terms of the additional difficulty of reaching?
+A lot of experiments have attempts to pin the discrepancy on this, or on other extraneous factors like task demands.
+But none of these attempts have succeeded.
+After all, we know infants are capable of acting because they move the transparent screen.
+        </div>
+        <div class="slide">
+          <div class="notes">As Jeanne Shinskey, one of the researchers most dedicated to this issue says, </div>
+          <p class="em-above handout show">‘action demands are not the only cause of failures on occlusion tasks’</p>
+          <div class="handout ctd">\citep[p.\ 291]{shinskey:2012_disappearing}</div>
+          <p class="right">Shinskey (2012, p. 291)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">If there were just one discrepancy, concerning performance, we might be able to hold on to the
+Simple View.  But there are systematic discrepancies along these lines.
+          </div>
+          <div class="notes">Related discrepancies concerning infants' understanding of physical objects occur in the case
+of their abilities to track causal interactions, too.
+          </div>
+          <p class="center">conflicting evidence: causal interactions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Recall this experiment about causal interactions, which used a habituation paradigm.
+Now imagine a version which involved getting infants to reach for the object rather than simply looking.
+What would the results be?
+There is an experiment much like this which has been replicated several times, and which shows 
+a discrepancy between looking and searching.
+Basically infants will look but not search.
+        </div>
+        <div style="position:relative;"><img src="/img/spelke_1992_fig2a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Spelke et al 1992, figure 2</p>
       </div>
     </div>
   </div>
@@ -1452,305 +1617,6 @@ includes Baillargeon's famous drawbridge study.
           <div class="notes">But why is this a problem?</div>
           <div class="notes">Because, as we'll see, it is hard to identify an alternative.</div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="unit_211" class="slide"><img src="/img/bkg/bees/DSC_0200_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">Like Knowledge and Like Not Knowledge</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{Like Knowledge and Like Not Knowledge}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{Like Knowledge and Like Not Knowledge}</div>
-<!-- -------------------->
-<!-- the problem is that we have to reject the simple view-->
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">There are principles of object perception that explain abilities to segment objects, to represent them while temporarily unperceived and to track their interactions. </div>
-          <div class="notes">These principles are not known.  What is their status?</div>
-          <p class="center">the problem</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">We'll see later that the problem is quite general.</div>
-          <div class="notes">It doesn't arise only in the case of knowledge of objects but also in other domains (like knowledge of number and knowledge of mind).</div>
-          <div class="notes">And it doesn't arise only from evidence about infants or nonhuman primates; it would also arise if our focus were exclusively on human adults.</div>
-          <div class="notes">More on this later.</div>
-          <div class="notes">For now, our aim is to consider proposed solutions to the problem.</div>
-          <p class="center">generality of the problem</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">One hopeful alternative is to shift from talk about knowlegde to talk about representation.</div>
-          <div class="notes">Will this help?</div>
-          <div class="notes">Only as a way of describing the problem.</div>
-          <p class="center"><span class="line-through">knowledge</span><span> representation</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">We need to say what we mean by representation.</div>
-          <div class="notes">The term is used in a wide variety of ways.</div>
-          <div class="notes">Here's what I mean ...</div>
-          <p class="handout show">‘no concept causes more problems in discussions of infant cognition than that of representation’</p>
-          <p class="right">(Haith 1998)</p>
-          <div class="handout ctd">\citep{Haith:1998aq}.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="notes">Take a paradigm case of representation.</div><img src="/img/slide_budapest_lecture02_07.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture02_08.jpg" class="bkg"/></section>
-<section class="slide">
-  <div class="notes">The subject might not be the agent but some part of it.</div>
-  <div class="notes">That is, we can imagine that some component of an agent, like her perceptual system or motor system, represents things that she herself does not.</div>
-  <div class="notes">(Of course, to make sense of this idea we need to invoke some notion of system.)</div><img src="/img/slide_budapest_lecture02_09.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture02_10.jpg" class="bkg"/></section>
-<section class="slide">
-  <div class="notes">The content is what distinguishes one belief from all others, or one desire from all others.</div>
-  <div class="notes">The content is also what determines whether a belief is true or false, and whether a desire is satisfied or unsatisfied.</div>
-  <div class="notes">There are two main tasks in constructing a theory of mental states. </div>
-  <div class="notes">The first task is to characterise the different attitudes.</div>
-  <div class="notes">This typically involves specifying their distinctive functional and normative roles.</div>
-  <div class="notes">The second task is to find a scheme for specifying the contents of mental states.</div><img src="/img/slide_budapest_lecture02_11.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture02_12.jpg" class="bkg"/></section>
-<section class="slide">
-  <div class="notes">The second task is to find a scheme for specifying the contents of mental states.</div>
-  <div class="notes">Usually this is done with propositions.</div>
-  <div class="notes">But what are propositions?</div>
-  <div class="notes">Propositions are abstract objects like numbers.</div>
-  <div class="notes">They have more mystique than numbers, but, like numbers, they are abstract objects that can be constructed using sets plus a few other basic ingredients such as objects, properties and possible worlds.</div><img src="/img/slide_budapest_lecture02_13.jpg" class="bkg"/>
-</section>
-<section class="slide">
-  <div class="notes">So that was some quick background on representation.</div>
-  <div class="notes">Note that the issue of representation comes up twice for us.</div>
-  <div class="notes">There is a question about whether the principles of object perception are represented.</div>
-  <div class="notes">And there is a question about whether objects, their locations, properties, and interactions are represented.</div>
-  <div class="notes">The problem raised by the discrepancy between looking and acting is a problem for two claims: <span>(i) the simple view (the principles of object perception are knowledge &c); and also </span><span>(ii) the claim that the representations of objects which derive from the principles of object perception are knowledge states.</span></div><img src="/img/slide_budapest_lecture02_11.jpg" class="bkg"/>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">So merely switching from talk about knowledge to talk about representation won't make the problem go away.</div>
-          <div class="notes">But this is a step in the right direction.</div>
-          <div class="notes">We need to characterise a form of representation that is like knowledge but not like knowledge.</div>
-          <p class="center"><span class="line-through">knowledge</span><span> representation</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">\citet{Munakata:2001ch} suggests that there are 'graded representations', that is knowlegde can be stronger or weaker.</div>
-          <div class="notes">Presupposes we have an account of subject, attitude and content.  Let's grant that.</div>
-          <div class="notes">What is strength?  Some additional component, over and above subject, attitude and content.</div>
-          <div class="notes">The idea is quite intuitive but difficult to make systematic sense of.</div>
-          <div class="notes">The idea might well make sense if we were talking about neural representations.</div>
-          <div class="notes">But here we aren't.  Let's not introduce radically new ideas about representation unless we really have to.</div>
-          <div class="notes">(By the way, \citet{Munakata:2001ch} is a nice review of dissociations, not only developmental dissociations.)</div>
-          <p class="center">strength (Munakata 2001)</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Core knowledge is a label for what we need.</div>
-          <div class="notes">I'm going to adopt the label.</div>
-          <div class="notes">But this only amounts to labelling the problem, not to solving it.</div>
-          <p class="center">core knowledge</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_5 left_half">
-        <p>is like knowledge:</p>
-        <ul>
-          <li>guides behaviour</li>
-          <li>involves something like inference</li>
-          <li>concerns abstract features</li>
-        </ul>
-      </div>
-      <div class="slide">
-        <div class="right-half-white">
-          <div class="grid_5 prefix_1">
-            <div class="words">
-              <p>is unlike knowledge:</p>
-              <ul>
-                <li>no introspection</li>
-                <li>judgement-independent</li>
-                <li>domain-specific</li>
-                <li>signature limits</li>
-              </ul>
-              <div class="notes">Several features distinguish core knowledge from adult-like understanding: its content is unknowable by introspection and judgement-independent; it is specific to quite narrow categories of event and does not grow by means of generalization; it is best understood as a collection of rules rather than a coherent theory; and it has limited application being usually manifest in the control of attention (as measured by dishabituation, gaze, and looking times) and rarely or never manifest in purposive actions such as reaching.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="handout show">‘Just as humans are endowed with multiple, specialized perceptual systems, so we are endowed with multiple systems for representing and reasoning about entities of different kinds.’</p>
-        <div class="handout ctd">\citep[p.\ 517]{Carey:1996hl}</div>
-        <p class="right">(Carey and Spelke 1996: 517)</p>
-        <div class="slide">
-          <p class="em-above handout show">‘core systems are conceptual and provide a foundation for the growth of knowledge.  … core systems are largely innate, encapsulated, and unchanging, arising from phylogenetically old systems built upon the output of innate perceptual analyzers.’ </p>
-          <div class="handout ctd">\citep[p.\ 520]{Carey:1996hl}</div>
-          <p class="right">(Carey and Spelke 1996: 520) 	</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p>core system = module?</p>
-        <div class="slide">
-          <p class="em-above handout show">‘In Fodor’s (1983) terms, visual tracking and preferential looking each may depend on <span class="highlight2">modular mechanisms</span><span>.’</span></p>
-          <div class="handout ctd">\citep[p.\ 137]{spelke:1995_spatiotemporal}</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- modularity-->
-<section class="slide">
-  <div class="notes">Modules are widely held to play a central role in explaining mental development and in accounts of the mind generally.</div>
-  <div class="notes">Jerry Fodor makes three claims about modules:</div><img src="/img/slide_emergence_warwick_027.jpg" class="bkg"/>
-</section>
-<section class="slide">
-  <div class="notes">What are these properties?  They'll be on your handout next week.</div><img src="/img/slide_emergence_warwick_086.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_emergence_warwick_027.jpg" class="bkg"/></section>
-<section class="slide">
-  <div class="notes">Not all researchers agree about the properties of modules.  That they are informationally encapsulated is denied by Dan Sperber and Deirdre Wilson (2002: 9), Simon Baron-Cohen (1995) and some evolutionary psychologists (Buller and Hardcastle 2000: 309), whereas Scholl and Leslie claim that information encapsulation is the essence of modularity and that any other properties modules have follow from this one (1999b: 133; this also seems to fit what David Marr had in mind, e.g. Marr 1982: 100-1).  According to Max Coltheart, the key to modularity is not information encapsulation but domain specificity; he suggests Fodor should have defined a module simply as 'a cognitive system whose application is domain specific' (1999: 118).  Peter Carruthers, on the other hand, denies that domain specificity is a feature of all modules (2006: 6).  Fodor stipulated that modules are 'innately specified' (1983: 37, 119), and some theorists assume that modules, if they exist, must be innate in the sense of being implemented by neural regions whose structures are genetically specified (e.g. de Haan, Humphreys and Johnson 2002: 207; Tanaka and Gauthier 1997: 85); others hold that innateness is 'orthogonal' to modularity (Karmiloff-Smith 2006: 568).  There is also debate over how to understand individual properties modules might have (e.g. Hirschfeld and Gelman 1994 on the meanings of domain specificity; Samuels 2004 on innateness).</div><img src="/img/slide_emergence_warwick_028.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_emergence_warwick_029.jpg" class="bkg"/></section>
-<section class="slide"><img src="/img/slide_emergence_warwick_030.jpg" class="bkg"/></section>
-<section class="slide">
-  <div class="notes">In short, then, theorists invoke many different notions of modularity, each barely different from others.  You might think this is just a terminological issue.  I want to argue that there is a substantial problem: we currently lack any theoretically viable account of what modules are.  The problem is not that 'module' is used to mean different things-after all, there might be different kinds of module.  The problem is that none of its various meanings have been characterised rigorously enough.  All of the theorists mentioned above except Fodor characterise notions of modularity by stipulating one or more properties their kind of module is supposed to have.  This way of explicating notions of modularity fails to support principled ways of resolving controversy.</div>
-  <div class="notes">&nbsp;</div>
-  <div class="notes">No key explanatory notion can be adequately characterised by listing properties because the explanatory power of any notion depends in part on there being something which unifies its properties and merely listing properties says nothing about why they cluster together.</div>
-  <div class="notes">&nbsp;</div>
-  <div class="notes">Interestingly, Fodor doesn't define modules by specifying a cluster of properties (pace Sperber 2001: 51); he mentions the properties only as a way of gesturing towards the phenomenon (Fodor 1983: 37) and he also says that modules constitute a natural kind (see Fodor 1983: 101 quoted above). </div><img src="/img/slide_emergence_warwick_031.jpg" class="bkg"/>
-</section>
-<section class="slide">
-  <div class="notes">It is tempting to appeal to spatial metaphors in thinking about modularity.  Just as academics tend to work at high-speed on domain-specific problems when they can cut themselves off from administrative centres, so we might attempt to explain the special properties of modules by saying that they are cut off from the central system.  But it isn't clear how to turn this metaphor into an explanation.  The spatial metaphor only gives us the illusion that we understand modularity.</div><img src="/img/slide_emergence_warwick_032.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_emergence_warwick_033.jpg" class="bkg"/></section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p>conclusion</p>
-        <ol>
-          <li>three requirements on knowledge of objects</li>
-          <li class="slide">principles of object perception
-            <div class="notes">remember formal, descriptive, teleological and mechanical adequacy</div>
-          </li>
-          <li class="slide line-through1">the simple view</li>
-          <li class="slide">a <span class="step2 hide">systematic</span><span> discrepancy between looking and searching measures</span>
-            <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
-            <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-            <div data-what=".line-through1" data-attr="text-decoration:line-through" class="slide anim-continue anim-attribute"></div>
-            <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-          </li>
-          <li class="slide">the nature of representation</li>
-          <li class="slide">core knowledge, modularity</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- *todo* mentioned modularity once already : return to that idea-->
-<!-- structure: (1) modularity --- general solution to the problem-->
-<!-- but modularity leaves open why the looking and not the searching (rather than conversely)?-->
-<!-- because searching is purposive in a way that looking is not?  (searching depends on practical reasoning)-->
-<!-- but why does the module affect looking, which seems purposive?-->
-<!-- Scholl & Leslie --- it's implemented by the finst object indices-->
-<!--    - use: (p. 12: 'These similarities have led to the view that adult attentional mechanisms may underlie infants’ performance on object individuation tasks (Carey & Xu, 2001; Chiang & Wynn, 2000; Leslie et al., 1998; Scholl, 2001; Scholl & Leslie, 1999; Simon, 1997; Wynn & Chiang, 1998).')-->
-<!-- So (i) that's why it affects looking; (ii) the principles aren't represented in the simple sense --- they're how the system works-->
-<!-- Further issue: developmental relation between core knowledge of the principles and the kind of knowledge that will inform acting-->
-<!-- - (a) Spelke/Carey joining together with language-->
-<!-- - (b) reflect on categorical perception: maybe it's development as rediscovery-->
-<!-- *also want to work in Michotte -- second take on physical interactions-->
-<!-- -------------------->
-<!-- perceptual expectations-->
-<!-- *what is it like to be an infant*-->
-<!-- *TODO* belongs later!!!-->
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/kellman_1983_fig2.png" style="clip: rect(0px,530px,186px,265px); position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Michotte et al (1964) via Kellman & Spelke (1983, figure 2)</p>
-        <div class="notes">There are perceptual expectations.</div>
-        <div class="notes">Suppose you saw this image.</div>
-        <div class="notes">The triangle behind the thumb is in some sense perceptually present, even though you can't see it.</div>
-        <div data-what="img" data-attr="clip:auto" class="slide anim-continue anim-attribute"></div>
-        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">But now the thumb comes away and what you see is not the triangle you were expecting.</div>
-        <div class="notes">Could these perceptual expectations be just a matter of knowledge?</div>
-        <div class="notes">No, because perceptual expectations are judgement-independent.</div>
-        <div class="notes">As \citep{kellman:1983_perception} report, Michotte, Thines and Crabbe found that subjects report seeing a single large triangle behind the thumb even when they know that there isn't one there.</div>
-        <div class="notes">You can cover and reveal the triangles repeatedly, but the expectation will hold firm.</div>
-        <div class="notes">&nbsp;</div>
-        <div class="notes">The experience you have when the thumb is removed is like that of infants' in violation-of-expectation tasks.</div>
-        <div class="notes">This is what it is like to be an infant.</div>
       </div>
     </div>
   </div>
