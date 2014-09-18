@@ -1,5 +1,6 @@
 body {
   font-family: Lato, sans-serif;
+font-size
 }
 h1,
 h2,
@@ -12,6 +13,21 @@ h7 {
 }
 h1 {
   text-shadow: 0 0 40px #fff, 0 0 20px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.hero-unit {
+  background-color: #000;
+  padding-left: 40em;
+  margin-left: -40em;
+  padding-right: 40em;
+  margin-right: -40em;
+}
+.hero-unit h1,
+.hero-unit h2,
+.hero-unit p {
+  color: #fff;
+}
+.hero-unit a {
+  color: #9fcde7;
 }
 .fade-in h1 {
   -webkit-animation: FadeIn2 20s;

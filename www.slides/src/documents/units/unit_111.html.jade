@@ -11,7 +11,8 @@ exercises: []
 exercises_fast: []
 ---
 
-include ../../../fragments/slide_mixins
+include ../../../fragments/unit_mixins
+include ../../../fragments/compatibility_mixins
 
 
 
@@ -143,8 +144,9 @@ section.slide#categorical_perception_df
           span.bkg-yellow Pop-out effects
         li.hide.step5
           span.bkg-pink Change (odd-ball) detection
-    p.slide.highlight1 A single set of categories enables us to predict all the patterns.
-    mixin row-bkg('.highlight1', 'grey')
+    .slide
+      p.highlight1 A single set of categories enables us to predict all the patterns.
+    +highlight-row('.highlight1', 'grey')
     .notes This is a fact in need of explanation.
     p.slide.em-above Hypothesis 1: There is a uniform explanation for all the patterns.
     p.slide.em-above Hypothesis 2: The unexpected patterns all occur because a cognitive process categorises stimlui into these categories.

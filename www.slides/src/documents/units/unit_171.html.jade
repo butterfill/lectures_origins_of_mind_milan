@@ -11,7 +11,8 @@ exercises: []
 exercises_fast: []
 ---
 
-include ../../../fragments/slide_mixins
+include ../../../fragments/unit_mixins
+include ../../../fragments/compatibility_mixins
 
 +slide_middle
   .notes How do humans segment objects?
@@ -243,11 +244,21 @@ include ../../../fragments/slide_mixins
     | and we generate expectations from these principles by a process of inference.
   .notes The simple view is that the Spelke principles are just known in whatever sense anything is known.
   .notes The simple view isn’t exactly Spelke’s, but it’s a useful starting point for discussion.
-  .notes: :t()
-    Now you might think that the case for these principles is not yet very strong.
-    In that case, asking hard questions about their status would hardly be necessary.
-    So let’s consider further evidence for these principles.
-    We can do this by turning from segmentation (which was our first requirement on knowledge of objects) 
-    to representing objects as permanent.
-  p.center the simple view
-
+  .blur1
+    p.center the simple view
+    .em-above &nbsp;
+    .slide
+      .notes: :t()
+        The Simple View is worth considering in its own right because it is so, well, simple.
+        But our interest in it may be piqued by the fact that   
+        Spelke herself appears to have accepted the Simple View at one point in her thinking.
+      p.handout.notes.show ‘objects are conceived: Humans come to know about an object’s unity, boundaries, and persistence in ways like those by which we come to know about its material composition or its market value’
+      .handout.notes.ctd     \citep[p.\ 198]{Spelke:1988xc}.
+      p.right Spelke (1988, p. 198)
+    +blur('.blur1')
+    .notes: :t()
+      Now you might think that the case for these principles is not yet very strong.
+      In that case, asking hard questions about their status would hardly be necessary.
+      So let’s consider further evidence for these principles.
+      We can do this by turning from segmentation (which was our first requirement on knowledge of objects) 
+      to representing objects as permanent.

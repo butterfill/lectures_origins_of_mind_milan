@@ -3,32 +3,79 @@ layout: 'default2'
 title: 'Lecture 05'
 weburl: ''
 units: []
-lecture_date: '2013/10/31'
+lecture_date: '2014/09/24'
 ---
 
-include ../../fragments/slide_mixins
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
 
-- var images = get_images('bees')
+- var images = get_images('twins_2009c')
 
-mixin title_slide({document:document, images:images})
-
-// *todo* too long and not clear enough
++title_slide({document:document, images:images})
 
 
-//- Knowledge of Mind
-+insert_unit({unit:'401', title_slide:false, images:images})
++slide_middle
+  p.center Our Next Big Problem
+  .notes: :t()
+    Recall from the previous lecture (yesterday) that our Next Big Problem is this. 
+    We've said that infants' competence with causes, objects and colours is not knowledge but 
+    something more primitive than knowledge, 
+    something involving perceptual processes, such as categorical perception.
+    These processes exist in adults too and can carry information 
+    discrepant with what they know. 
+  .notes: :t()
+    The Next Big Problem is, How does appealing to these early-developing capacities 
+    enable us to explain the origins of knowledge?
 
-//- First Puzzle (infants vs 4 year olds)
-+insert_unit({unit:'411', title_slide:true, images:images})
++slide
+  p.center
+    img(src='/img/fig_rediscovery.png')
+  .notes: :t()
+    In the previous lecture (on categorical perception) I sketched an answer.
+    The idea is that categorical perception--and the perceptual processes associated with infants'
+    capacities to deal with objects and causes--are important because they provide phenomenal 
+    markers.  
+    They do not reveal that there something has a certain categorical colour property, or that
+    an event is a certain type of causal interaction.
+    But they do allow infants to discriminate between these things.
+    They are, if you like, highlighted in their experience, but not in a way that reveals their 
+    nature.
+  .notes: :t()
+    A key part of this picture is that these capacities only support the emergence of knowledge 
+    about objects or colours or causes in connection with social interaction and language.
+    It is now time to consider the language part of this ...
 
-//- Second Puzzle (automaticity)
-+insert_unit({unit:'421', title_slide:true, images:images})
 
-//- modularity & efficiency
-+insert_unit({unit:'431', title_slide:true, images:images})
+//- What is an utterance
++insert_unit({unit:'501', title_slide:true, images:images})
 
-//- minimal theory of mind
-+insert_unit({unit:'441', title_slide:true, images:images})
+//- Davidson - If someone can think, she can communicate with language
++insert_unit({unit:'511', title_slide:true, images:images})
 
-//- Signature Limits Generate Predictions
-+insert_unit({unit:'451', title_slide:true, images:images})
+//- First view: training / lab rat
++insert_unit({unit:'521', title_slide:true, images:images})
+
+//- understanding
++insert_unit({unit:'531', title_slide:true, images:images})
+
+//- linguistic Creativity
++insert_unit({unit:'541', title_slide:true, images:images})
+
+//- Bloom &c
++insert_unit({unit:'551', title_slide:true, images:images})
+
+//- Summary
++insert_unit({unit:'561', title_slide:true, images:images})
+
+//- Grice
++insert_unit({unit:'571', title_slide:true, images:images})
+
+//- Second view: shipwreck survivor (Bloom)
+
+//- Against the second view
+
+//- Third view: social interaction
+
+//- Against the third view
+
+//- Conclusion

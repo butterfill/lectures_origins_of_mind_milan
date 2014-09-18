@@ -434,7 +434,7 @@ mixin row-bkg(what, color, container)
   if typeof(what)==='string'
     - what = [what]
   if !color
-    color = 'grey'
+    - color = 'grey'
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-#{color}-row")
     if color=='white'
@@ -445,7 +445,7 @@ mixin row-bkg-remove_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
   if !color
-    color = 'grey'
+    - color = 'grey'
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-#{color}-row")
     if color=='white'

@@ -118,7 +118,9 @@ blur()
  * classes that map directly to css styles
  */
 .italic
-  font-style: italic
+  font-style italic
+.deck-container .bold
+  font-weight bold
 .grey-text
   color grey
 .line-through
@@ -137,8 +139,17 @@ blur()
 .right
   text-align: right
 
-.indent
+.deck-container .indent
   padding-left: 1em
+
+.width-720
+  width 720px
+.width-500
+  width 500px
+.width-450
+  width 450px
+.width-350
+  width 350px
 
 .deck-container
   .hem-above
@@ -147,6 +158,23 @@ blur()
     padding-top: 1em
   .em-above-each-td td
     padding-top: 1em
+
+  .up-10
+    margin-top -10px
+  .up-20
+    margin-top -20px
+  .up-30
+    margin-top -30px
+  .up-40
+    margin-top -40px
+  .up-50
+    margin-top -50px
+  .up-75
+    margin-top -75px
+  .up-100
+    margin-top -100px
+  .up-125
+    margin-top -125px
   
 /**
  * Allow slides to be recalled by adding a class
@@ -348,7 +376,9 @@ div.container_12
   .bottom
     position absolute
     bottom 0px
-
+  
+  .small-text
+    font-size 66%
   .source
     text-align right
     font-size 66%
@@ -582,15 +612,17 @@ btm-white(height,top)
   btm-X(height,top)
   invert_text()
   box-shadow: 0px -8px 8px 0 rgba(255,255,255,0.5)
+  z-index -99
 
-.deck-container .bottom-white
-  btm-white 225px, 375px
+.deck-container 
+  .bottom-white
+    btm-white 225px, 375px
  
-.deck-container .bottom-half-white
-  btm-white 300px, 300px
+  .bottom-half-white
+    btm-white 300px, 300px
 
-.deck-container .bottom-third-white
-  btm-white 200px, 400px
+  .bottom-third-white
+    btm-white 200px, 400px
 
 
 btm-black(height,top)
@@ -599,6 +631,7 @@ btm-black(height,top)
   //background linear-gradient(top, rgba(0,0,0,0), 20% rgba(0,0,0,1), rgba(0,0,0,1))
   background-color: black
   box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5)
+  z-index -99
 
 top-black(height)
   top-X height
@@ -627,6 +660,7 @@ top-black(height)
   width: 400px
   left: 400px
   invert_text()
+  z-index -99
 
 .deck-container .left-half-white
   background-color: white
@@ -637,6 +671,7 @@ top-black(height)
   width: 400px
   left: 0px
   invert_text()
+  z-index -99
 
 
 /**
@@ -998,3 +1033,19 @@ p.speech-right:after
   
   
   
+
+
+/**
+ * flexbox
+ */
+.flex-container, .flex-container-column
+  display flex
+
+.flex-container-column
+  flex-direction column
+
+.flex-end
+  justify-content flex-end
+
+.flex-start
+  justify-content flex-start

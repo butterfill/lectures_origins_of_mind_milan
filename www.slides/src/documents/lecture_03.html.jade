@@ -1,0 +1,231 @@
+---
+layout: 'default2'
+title: 'Lecture 03'
+weburl: ''
+units: []
+lecture_date: '2014/09/23'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('sunset')
+
+mixin title_slide({document:document, images:images})
+
+
+
++slide
+  .notes: :t()
+    In this lecture I want to   consider two interlocking themes simultaneously.
+    The first is the problem I introduced in the last lecture, which arises from
+    the failure of the Simple View.
+    The problem is to understand the relation between infants' abilities regarding physical objects
+    and the Spelke principles which describe these given that the principles and their deliverances
+    are not actually knowledge.
+    The other theme is knowledge of causal interactions.
+    
+    On causal interactions, my question is: How do infants first acquire knowledge of causal 
+    interactions among objects.
+    I want to approach this question in an odd way, by thinking about the perception of causation
+    in adults.
+    My hope is that focussing on the perception of causation might help us to make progress 
+    with both themes simultaneously.  
+    
+  p two interlocking themes:
+    ul
+      li the problem
+      li knowledge of causal interactions
+  
+// *todo duplicated in other units
+section.slide
+  .notes: :t()
+    I also want to complicate things by considering another question in this lecture.
+    The question is,
+    What is the relation between infants' competencies with objects and adults'?
+    Is it that infants' competencies grow into more sophisticated adult competencies?
+    Or is it that they remain constant throught development, and are supplemented by quite 
+    separate abilities?
+  p.em-above &nbsp;
+  .container_12
+    .grid_3
+      p.center infant
+    .grid_3
+      p &nbsp;
+    .grid_3
+      p &nbsp;
+    .grid_3
+      p.center adult
+  .clear
+  p &nbsp;
+  .container_12
+    .grid_3
+      +colour-ball('yellow', '25')
+    .grid_3.slide
+      +colour-ball('yellow', '50')
+    .grid_3.slide
+      +colour-ball('yellow', '75')
+    .grid_3.slide
+      +colour-ball('yellow', '100')
+  .clear
+  .container_12
+    .grid_3
+      p &nbsp;
+    .grid_3
+      p.center social interaction
+    .grid_3
+      p.center language
+    .grid_3
+      p &nbsp;
+  .clear
+  p &nbsp;
+  .slide.container_12
+    .grid_3
+      +colour-ball('yellow', '25')
+    .grid_3
+      +colour-ball('yellow', '25')
+      +colour-ball('cyan', '25')
+    .grid_3
+      +colour-ball('yellow', '25')
+      +colour-ball('cyan', '50')
+    .grid_3
+      +colour-ball('yellow', '25')
+      +colour-ball('cyan', '100')
+  .words: .container_12: .grid_12
+    p(style='margin-top:-50px;') time --->    
+
+// core knowledge / modular representation : paradigm cases
+// ***abandoned
+// mixin insert_unit({unit:'241', title_slide:true, images:images})
+  
+// perception of causation
++insert_unit({unit:'251', title_slide:true, images:images})
+  
+// object indexes (object files) and causal perception
++insert_unit({unit:'261', title_slide:true, images:images})
+
+// object indexes and the principles of object perception
++insert_unit({unit:'266', title_slide:true, images:images})
+  
+// perceptual expectations
++insert_unit({unit:'271', title_slide:true, images:images})
+
+
+//- conclusions
+//- replaced by the bit below
+// +insert_unit({unit:'281', title_slide:true, images:images})
+
+//- conclude lecture 03
++section({title:'Summary of Lecture 03', images:images})
++slide
+  p two interlocking themes:
+    ul
+      li the problem
+      li knowledge of causal interactions
+        p.subquestion.hide - Can humans perceive causal interactions?
+  .notes: :t()
+    In this lecture I've been considering two interlocking themes simultaneously.
+    The first is the problem I introduced in the last lecture, which arises from
+    the failure of the Simple View.
+  +highlight-row('li:eq(0)')
+  .notes: :t()
+    I suggested that a key step in solving this problem is the link between the Principles of
+    Object Perception and object indexes.
+    The Principles are not items of knowledge, nor do they generate knowledge about particular 
+    objects.
+    Rather, the Principles characterise the operation of object indexes, and object indexes give
+    rise to perceptual expectations.
+    And, as we've just seen, perceptual expectations are not knowledge.
+    
+    The problem is to understand the relation between infants' abilities regarding physical objects
+    and the Spelke principles which describe these given that the principles and their deliverances
+    are not actually knowledge.
+    The other theme is knowledge of causal interactions.
+    
+    On causal interactions, my question is: How do infants first acquire knowledge of causal 
+    interactions among objects.
+    I want to approach this question in an odd way, by thinking about the perception of causation
+    in adults.
+    My hope is that focussing on the perception of causation might help us to make progress 
+    with both themes simultaneously.  
+  +highlight-row-remove_('li:eq(0)')
+  +highlight-row('li:eq(1)')
+  .notes: :t()
+    The second question was about the origins of our knowledge of causal interactions.
+    How do humans first come to know about causes?
+  +show('.subquestion')
+  .notes: :t()
+    I approached this question by asking a subquestion, Can humans perceive causal interactions?
+    We've seen that, roughly speaking, the answer is yes.
+    Humans, including infants from around 6 months or earlier, do have perceptual processes that 
+    function to track certain kinds of causal interactions among objects.
+  .notes: :t()
+    But how does this information about perceptual processes relate to knowledge?
+    This is the Next Big Problem.
+    
++slide_middle
+  p.center The Next Big Problem
+  .notes: :t()
+    Our Next Big Problem is this.
+    We've said that infants' competence with causes and objects is not knowledge but something 
+    more primitive than knowledge, something which exists in adults too and can carry information
+    discrepant with what they know.
+    So, if at all, how does appealing to these early capacities enable us to explain the origins 
+    of knowledge?
+
+    
++slide({bkg:'slide_causation_development.jpg'})
+  .notes: :t()
+    Broadly, my suggestion will be that the competence which appears in the first months of 
+    development leads to knowledge of objects and causes only in conjunction with various
+    additional things, like social interaction, perhaps language and abilities to use tools.
+  .notes: :t()
+    The picture I want to offer differs from those of researchers like Vygotsky and Tomasello in 
+    that there is an essential role for early-developing forms of representation that are more
+    primitive that concepts or thoughts and do not appear to have any kind of social origin.
+  .notes: :t()
+    But the picture also differs from those of researchers like Spelke and Carey in that these
+    early developing forms of representation are only one of several components that are needed
+    to understand the origins of knowledge.
+  .notes: :t()
+    To explore this idea I want to switch to a completely different domain, colour.
+  .notes: :t()
+    [*Aside on tool use:]
+    Basic forms of tool use may not require understanding how objects interact 
+    (Barrett, Davis, & Needham; Lockman, 2000), and may depend on core cognition of 
+    contact-mechanics (Goldenberg & Hagmann, 1998; Johnson-Frey, 2004). 
+    Experience of tool use may in turn assist children in understanding notions of manipulation, 
+    a key causal notion (Menzies & Price, 1993; Woodward, 2003). Perhaps non-core capacities for 
+    causal representation are not innate but originate with experiences of tool use.	
+            
+
+// ---------------------------
+
+
+//- *** MOVE THESE ??? ***
+  // intro to core knowledge / modularity
+  mixin insert_unit({unit:'231', title_slide:true, images:images})
+
+
+  // computation is the real essence of modularity
+  mixin insert_unit({unit:'291', title_slide:true, images:images})
+
+
+
+//- core knowledge and categorical perception --- how related?
+//- *todo* lots of useful material here
+  mixin insert_unit({unit:'151', title_slide:true, images:images})
+
+//-
+  on core knowledge:
+    - first talk about knowledge of syntax?
+    - principles and parameters
+    - poverty of stimulus (quote from Chomsky on Skinner?)
+    - not linked to consciousness, not available for introspection, ...
+    - Searle's objection
+    - defence: respectable notions of representation?  (Shea ideas)
+    - how is this a model: it invovles a set of principles being used in an inference-like process
+    - compare Spelke on principles of object perception
+  
+  
+

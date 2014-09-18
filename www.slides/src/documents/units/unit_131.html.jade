@@ -11,7 +11,26 @@ exercises: []
 exercises_fast: []
 ---
 
-include ../../../fragments/slide_mixins
+include ../../../fragments/unit_mixins
+include ../../../fragments/compatibility_mixins
+
+
++slide_middle
+  p.center Our Next Big Problem
+  .notes: :t()
+    Recall that our Next Big Problem is this. 
+    We've said that infants' competence with causes and objects is not knowledge but something 
+    more primitive than knowledge, something which exists in adults too and can carry information 
+    discrepant with what they know. So, if at all, how does appealing to these early capacities 
+    enable us to explain the origins of knowledge?
+  .notes: :t()
+    As we've just seen, a version of this problem arises for the case of colour.
+    Perhaps we can partially resolve the Next Big Problem in the case of colour, and then use 
+    this as a model for other cases.
+  .notes: :t()
+    Let's see.
+    First I want to be clear about what the problem is ...
+    
 
 
 section.slide
@@ -241,19 +260,34 @@ section.slide
   .notes How might this apply in the case of knowledge of colour?
   .words 
     .container_12: .grid_12
-      p.em-above In acquiring a colour concept or word you need to:
+      p.em-above.notes.show In acquiring a colour concept or word you need to:
       ol
-        li.slide.highlight1 identify the dimension (colour not shape, size, or ...)
-        li.highlight2 locate the boundaries
-          .notes On locating the boundaries, I think having colour words might be helpful as a way of marking a category before you know where its boundaries are.
-          .notes That is, the word allows you to re-identify a category without knowing where it begins or ends.
-      mixin row-bkg('.highlight1', 'grey')
-      .notes It's with this first problem that I think categorical perception helps with.
-      .notes I suggest that categorical perception enables you to lock onto the relevant dimension.
-      .notes How?
-      .notes Categorical perception alters your experience so that there's a correspondence between (i) changes on the relevant dimension, and (ii) changes in one phenomenal aspect of your experience.
-      .notes This correspondence helps you, eventually, to lock onto the relevant dimension and so to acquire concepts and words.
-      .notes Let me illustrate.
+        li identify the dimension (colour not shape, size, or ...)
+        li locate the boundaries
+      +highlight-row('li:eq(1)')
+      .notes: :t()
+        On locating the boundaries, I think having colour words might be helpful as a way of 
+        marking a category before you know where its boundaries are.
+        That is, the word allows you to re-identify a category without knowing where it begins 
+        or ends.
+      .notes: :t()
+        Given differences between the boundaries of pre-verbal infants' perceptual categories
+        and the extensions of colour words, it seems unlikely that categorical perception could 
+        help here.  (Although it is possible in principle that, due to abstract features common to 
+        all languages' systems of colour words, categorical perception might help; see Kay and ?*.)
+      +highlight-row-remove_('li:eq(1)')
+      +highlight-row('li:eq(0)')
+      .notes: :t()
+        It's with this first problem that I think categorical perception helps with.
+        I suggest that categorical perception enables you to lock onto the relevant dimension.
+      .notes: :t()
+        How?
+        Categorical perception alters your experience so that there's a correspondence between 
+        (i) changes on the relevant dimension, and (ii) changes in one phenomenal aspect of your 
+        experience.
+        This correspondence helps you, eventually, to lock onto the relevant dimension and so to 
+        acquire concepts and words.
+        Let me illustrate.
 
 section.slide
   .notes One effect of categorical perception is phenomenological.

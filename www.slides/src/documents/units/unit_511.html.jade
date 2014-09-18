@@ -77,8 +77,10 @@ mixin fragment_davidsons_argument()
   
   
 mixin fragment_davidson_false_belief(p)
-  if typeof p === 'undefined' || !p.hasOwnProperty('steps') 
-    p = {steps: true}
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('steps' in p) 
+    - p = {steps: true}
   p ‘We, observing and describing … a creature …, say that it discriminates certain shapes, objects, colors, and so forth, by which we mean that it reacts in ways we find similar to shapes, objects, and colors which we find similar.
   p(class="#{p.steps ? 'slide' : ''}") But we would be making a mistake if we were to assume that because the creature discriminates and reacts in much the way we do, that it has the corresponding concepts.
   p(class="#{p.steps ? 'slide' : ''}") The difference, as I keep emphasizing, lies in the fact that we, unlike the creature I am describing, can, from our point of view, make mistakes in classification.’

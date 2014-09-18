@@ -98,6 +98,13 @@ var inject = function(){
           </div>
         </div>
       </section>
+<!---->
+<!-- short form:-->
+<!--  remove_class('.blur')-->
+<!-- long forms:-->
+<!--  remove_class('.elements', 'blur')-->
+<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
+<!---->
 <div class="deck-container">
   <div id="title-slide" class="slide"><img src="" class="bkg"/>
     <div class="spacer">&nbsp;</div>
@@ -109,7 +116,6 @@ var inject = function(){
       </div>
     </div>
   </div>
-  <p>={}</p>
   <section class="slide">
     <div class="words">
       <div class="container_12">
@@ -122,7 +128,7 @@ var inject = function(){
   </section>
   <section class="slide">
     <div class="container_12">
-      <div class="grid_12">
+      <div class="grid_12 ">
         <div class="words">
           <div class="middle">
             <div style="position:absolute;top:0px;left:0;z-index:-30;width:100%;margin-top:-150px;">
@@ -134,7 +140,6 @@ var inject = function(){
       </div>
     </div>
   </section>
-  <p>={}</p>
   <section class="slide">
     <div class="words">
       <div class="container_12">
@@ -161,7 +166,6 @@ var inject = function(){
       </div>
     </div>
   </section>
-  <p>={}</p>
   <section class="slide">
     <div class="words">
       <div class="container_12">
@@ -176,24 +180,17 @@ var inject = function(){
             <li><span>first line (in span)</span></li>
             <li><span>second line</span></li>
           </ol>
-          <color>= color || 'grey'</color>
-          <div data-what=" ol:eq(0) li:eq(0)" data-class="bkg-undefined-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" ol:eq(0) li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-          <color>= color || 'grey'</color>
-          <div data-what=" ol:eq(0) li:eq(0)" data-class="bkg-undefined-row" class="slide anim-continue anim-removeclass"></div>
-          <color>= color || 'grey'</color>
+          <div data-what=" ol:eq(0) li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
           <div data-what=" ol:eq(0) li:eq(1)" data-class="bkg-pink-row" class="slide anim-continue anim-addclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-          <color>= color || 'grey'</color>
           <div data-what=" ol:eq(0) li:eq(1)" data-class="bkg-pink-row" class="slide anim-continue anim-removeclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
           <!-- second list-->
-          <color>= color || 'grey'</color>
-          <div data-what=" ol:eq(1) li:eq(0) span" data-class="bkg-undefined-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" ol:eq(1) li:eq(0) span" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-          <color>= color || 'grey'</color>
-          <div data-what=" ol:eq(1) li:eq(0) span" data-class="bkg-undefined-row" class="slide anim-continue anim-removeclass"></div>
-          <color>= color || 'grey'</color>
+          <div data-what=" ol:eq(1) li:eq(0) span" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
           <div data-what=" ol:eq(1) li:eq(1) span" data-class="bkg-pink-row" class="slide anim-continue anim-addclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         </div>
@@ -232,13 +229,10 @@ var inject = function(){
           </ol>
           <div class="notes">So why don't apes point?</div>
           <div class="notes">Because they don't know (2) or (3) or both.</div>
-          <color>= color || 'grey'</color>
-          <div data-what=" ol:eq(1) li:eq(1)" data-class="bkg-undefined-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" ol:eq(1) li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-          <color>= color || 'grey'</color>
-          <div data-what=" ol:eq(1) li:eq(1)" data-class="bkg-undefined-row" class="slide anim-continue anim-removeclass"></div>
-          <color>= color || 'grey'</color>
-          <div data-what=" ol:eq(0) li:eq(1)" data-class="bkg-undefined-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" ol:eq(1) li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" ol:eq(0) li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         </div>
       </div>

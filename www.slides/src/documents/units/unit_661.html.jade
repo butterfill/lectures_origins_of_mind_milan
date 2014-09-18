@@ -11,7 +11,7 @@ exercises: []
 exercises_fast: []
 ---
 
-include ../../../fragments/slide_mixins
+include ../../../fragments/unit_mixins
 
 +slide
   p Adults can use pointing to ...
@@ -57,32 +57,32 @@ include ../../../fragments/slide_mixins
   .notes Now imagine an experiment with four conditions.
   .notes In each condition, there are several trials involving something appearing and, hopefully, the infant pointing at it.
   .notes So how do the conditions differ?
-  +row-bkg('li:eq(0) p')
+  +highlight-row('li:eq(0) p')
   .notes In one condition, the experimenter ignores the infant when she points.
-  +row-bkg-remove_('li:eq(0) p')
-  +row-bkg('li:eq(1) p')
+  +highlight-row-remove_('li:eq(0) p')
+  +highlight-row('li:eq(1) p')
   .notes In another condition, the experimenter looks at the infant only.
-  +row-bkg-remove_('li:eq(1) p')
-  +row-bkg('li:eq(2) p')
-  +row-bkg-remove_('li:eq(2) p')
-  +row-bkg('li:eq(3) p')
-  +row-bkg-remove('li:eq(3) p')
+  +highlight-row-remove_('li:eq(1) p')
+  +highlight-row('li:eq(2) p')
+  +highlight-row-remove_('li:eq(2) p')
+  +highlight-row('li:eq(3) p')
+  +highlight-row-remove('li:eq(3) p')
   .notes What predictions should we make?
   +unblur('li:eq(1) span')
   .notes If infants point to draw attention to themselves, what can we predict?
-  +row-bkg('li:eq(1) p, li:eq(3) p', 'pink')
+  +highlight-row('li:eq(1) p, li:eq(3) p', 'pink')
   .notes They should be more satisfied in these conditions.
-  +row-bkg('li:eq(0) p, li:eq(2) p', 'teal')
+  +highlight-row('li:eq(0) p, li:eq(2) p', 'teal')
   .notes They should be less satisfied in these conditions.
   .notes But how can we measure satisfaction?
   .notes Within a trial: less satisfied with response should lead to more pointing.
   .notes Across all trials: more satisfied with responses should make it more likely that pointing will occur in a trial (at least once).
-  +row-bkg-remove_('li:eq(1) p, li:eq(3) p', 'pink')
-  +row-bkg-remove_('li:eq(0) p, li:eq(2) p', 'teal')
+  +highlight-row-remove_('li:eq(1) p, li:eq(3) p', 'pink')
+  +highlight-row-remove_('li:eq(0) p, li:eq(2) p', 'teal')
   +blur_('li:eq(1) span')
   +unblur('li:eq(3) span')
   .notes If infants point to initiate joint engagement, what should we expect then?
-  +row-bkg('li:eq(3) p', 'pink')
+  +highlight-row('li:eq(3) p', 'pink')
   .notes Satisfied in this condition and not in any other.
   
   

@@ -106,6 +106,37 @@ var inject = function(){
           </div>
         </div>
       </section>
+<!---->
+<!-- short form:-->
+<!--  remove_class('.blur')-->
+<!-- long forms:-->
+<!--  remove_class('.elements', 'blur')-->
+<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
+<!---->
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">Our Next Big Problem</p>
+          <div class="notes">Recall that our Next Big Problem is this. 
+We've said that infants' competence with causes and objects is not knowledge but something 
+more primitive than knowledge, something which exists in adults too and can carry information 
+discrepant with what they know. So, if at all, how does appealing to these early capacities 
+enable us to explain the origins of knowledge?
+          </div>
+          <div class="notes">As we've just seen, a version of this problem arises for the case of colour.
+Perhaps we can partially resolve the Next Big Problem in the case of colour, and then use 
+this as a model for other cases.
+          </div>
+          <div class="notes">Let's see.
+First I want to be clear about what the problem is ...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="slide">
   <div class="notes">Our overall question is about how humans come to know things about colours.</div>
   <div class="notes">How is categorical perception of colour relevant to this question?</div>
@@ -149,8 +180,7 @@ var inject = function(){
     </div>
     <div data-what=" .step2" data-class="hide" class="slide anim-removeclass"></div>
     <div class="notes">But is it true?</div>
-    <div data-what=" .highlight1" data-class="invert" class="slide anim-continue anim-addclass"></div>
-    <div data-what=" .highlight1" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+    <div data-what=" .highlight1" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-addclass"></div>
     <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
     <div class="notes">The first problem is to understand the ‘building blocks’ metaphor.</div>
   </div>
@@ -168,8 +198,7 @@ var inject = function(){
           <p class="em-above handout show">‘The <span class="highlight1">module</span><span>  … automatically provides a conceptual identification of its input for central thought … in exactly the right format for inferential processes’ </span></p>
           <div class="handout ctd">\citep[pp.\ 193--4]{Leslie:1988ct}</div>
           <p class="right">(Leslie 1988: 193-4)</p>
-          <div data-what=" .highlight1" data-class="invert" class="slide anim-continue anim-addclass"></div>
-          <div data-what=" .highlight1" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" .highlight1" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-addclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
           <div class="notes">We'll say something about what modules are later---for now, just be aware that categorical perception counts as a modular process.</div>
         </div>
@@ -283,8 +312,7 @@ var inject = function(){
         <p class="em-above handout show">‘the earliest conceptual functioning consists of a <span class="highlight1">redescription</span><span>  of perceptual structure’ </span></p>
         <div class="handout ctd">\citep{Mandler:1992vn}</div>
         <p class="right">(Mandler 1992)</p>
-        <div data-what=" .highlight1" data-class="invert" class="slide anim-continue anim-addclass"></div>
-        <div data-what=" .highlight1" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+        <div data-what=" .highlight1" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-addclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div class="notes">One worry here is that we've replaced one metaphor with another, ‘redescription’ for ‘building block’.</div>
         <div class="notes">But let's put this aside for a moment in order to reflect on why Mandler is wrong.</div>
@@ -411,22 +439,37 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <p class="em-above">In acquiring a colour concept or word you need to:</p>
+        <p class="em-above notes show">In acquiring a colour concept or word you need to:</p>
         <ol>
-          <li class="slide highlight1">identify the dimension (colour not shape, size, or ...)</li>
-          <li class="highlight2">locate the boundaries
-            <div class="notes">On locating the boundaries, I think having colour words might be helpful as a way of marking a category before you know where its boundaries are.</div>
-            <div class="notes">That is, the word allows you to re-identify a category without knowing where it begins or ends.</div>
-          </li>
+          <li>identify the dimension (colour not shape, size, or ...)</li>
+          <li>locate the boundaries</li>
         </ol>
-        <div data-what=" .highlight1" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what=" li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">It's with this first problem that I think categorical perception helps with.</div>
-        <div class="notes">I suggest that categorical perception enables you to lock onto the relevant dimension.</div>
-        <div class="notes">How?</div>
-        <div class="notes">Categorical perception alters your experience so that there's a correspondence between (i) changes on the relevant dimension, and (ii) changes in one phenomenal aspect of your experience.</div>
-        <div class="notes">This correspondence helps you, eventually, to lock onto the relevant dimension and so to acquire concepts and words.</div>
-        <div class="notes">Let me illustrate.</div>
+        <div class="notes">On locating the boundaries, I think having colour words might be helpful as a way of 
+marking a category before you know where its boundaries are.
+That is, the word allows you to re-identify a category without knowing where it begins 
+or ends.
+        </div>
+        <div class="notes">Given differences between the boundaries of pre-verbal infants' perceptual categories
+and the extensions of colour words, it seems unlikely that categorical perception could 
+help here.  (Although it is possible in principle that, due to abstract features common to 
+all languages' systems of colour words, categorical perception might help; see Kay and ?*.)
+        </div>
+        <div data-what=" li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">It's with this first problem that I think categorical perception helps with.
+I suggest that categorical perception enables you to lock onto the relevant dimension.
+        </div>
+        <div class="notes">How?
+Categorical perception alters your experience so that there's a correspondence between 
+(i) changes on the relevant dimension, and (ii) changes in one phenomenal aspect of your 
+experience.
+This correspondence helps you, eventually, to lock onto the relevant dimension and so to 
+acquire concepts and words.
+Let me illustrate.
+        </div>
       </div>
     </div>
   </div>

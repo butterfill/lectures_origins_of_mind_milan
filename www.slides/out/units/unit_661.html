@@ -106,6 +106,13 @@ var inject = function(){
           </div>
         </div>
       </section>
+<!---->
+<!-- short form:-->
+<!--  remove_class('.blur')-->
+<!-- long forms:-->
+<!--  remove_class('.elements', 'blur')-->
+<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
+<!---->
 <section class="slide">
   <div class="words">
     <div class="container_12">
@@ -170,28 +177,20 @@ var inject = function(){
         <div class="notes">Now imagine an experiment with four conditions.</div>
         <div class="notes">In each condition, there are several trials involving something appearing and, hopefully, the infant pointing at it.</div>
         <div class="notes">So how do the conditions differ?</div>
-        <color>= 'grey'</color>
-        <div data-what=" li:eq(0) p" data-class="bkg-undefined-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what=" li:eq(0) p" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div class="notes">In one condition, the experimenter ignores the infant when she points.</div>
-        <color>= 'grey'</color>
-        <div data-what=" li:eq(0) p" data-class="bkg-undefined-row" class="slide anim-continue anim-removeclass"></div>
-        <color>= 'grey'</color>
-        <div data-what=" li:eq(1) p" data-class="bkg-undefined-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what=" li:eq(0) p" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" li:eq(1) p" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div class="notes">In another condition, the experimenter looks at the infant only.</div>
-        <color>= 'grey'</color>
-        <div data-what=" li:eq(1) p" data-class="bkg-undefined-row" class="slide anim-continue anim-removeclass"></div>
-        <color>= 'grey'</color>
-        <div data-what=" li:eq(2) p" data-class="bkg-undefined-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what=" li:eq(1) p" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" li:eq(2) p" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <color>= 'grey'</color>
-        <div data-what=" li:eq(2) p" data-class="bkg-undefined-row" class="slide anim-continue anim-removeclass"></div>
-        <color>= 'grey'</color>
-        <div data-what=" li:eq(3) p" data-class="bkg-undefined-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what=" li:eq(2) p" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" li:eq(3) p" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <color>= 'grey'</color>
-        <div data-what=" li:eq(3) p" data-class="bkg-undefined-row" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" li:eq(3) p" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div class="notes">What predictions should we make?</div>
         <div data-what="li:eq(1) span" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
@@ -252,7 +251,7 @@ var inject = function(){
 </section>
 <section class="slide">
   <div class="container_12">
-    <div class="grid_12">
+    <div class="grid_12 ">
       <div class="words">
         <div class="middle">
           <p class="center">12-month-old infants point <span class="slide">not only to request but also to initiate joint engagement.</span></p>

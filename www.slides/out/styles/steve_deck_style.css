@@ -112,6 +112,9 @@ html {
 .italic {
   font-style: italic;
 }
+.deck-container .bold {
+  font-weight: bold;
+}
 .grey-text {
   color: #808080;
 }
@@ -148,8 +151,20 @@ html {
 .right {
   text-align: right;
 }
-.indent {
+.deck-container .indent {
   padding-left: 1em;
+}
+.width-720 {
+  width: 720px;
+}
+.width-500 {
+  width: 500px;
+}
+.width-450 {
+  width: 450px;
+}
+.width-350 {
+  width: 350px;
 }
 .deck-container .hem-above {
   padding-top: 0.5em;
@@ -159,6 +174,30 @@ html {
 }
 .deck-container .em-above-each-td td {
   padding-top: 1em;
+}
+.deck-container .up-10 {
+  margin-top: -10px;
+}
+.deck-container .up-20 {
+  margin-top: -20px;
+}
+.deck-container .up-30 {
+  margin-top: -30px;
+}
+.deck-container .up-40 {
+  margin-top: -40px;
+}
+.deck-container .up-50 {
+  margin-top: -50px;
+}
+.deck-container .up-75 {
+  margin-top: -75px;
+}
+.deck-container .up-100 {
+  margin-top: -100px;
+}
+.deck-container .up-125 {
+  margin-top: -125px;
 }
 /**
  * Allow slides to be recalled by adding a class
@@ -488,6 +527,9 @@ div.container_12 {
   position: absolute;
   bottom: 0px;
 }
+.deck-container div.words .small-text {
+  font-size: 66%;
+}
 .deck-container div.words .source {
   text-align: right;
   font-size: 66%;
@@ -768,6 +810,7 @@ table.data tbody tr.even td {
   text-shadow: 0 0 2px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff, 0 0 5px #fff, 0 0 5px #fff;
   -webkit-box-shadow: 0px -8px 8px 0 rgba(255,255,255,0.5);
   box-shadow: 0px -8px 8px 0 rgba(255,255,255,0.5);
+  z-index: -99;
 }
 .deck-container .bottom-half-white {
   background-color: #fff;
@@ -781,6 +824,7 @@ table.data tbody tr.even td {
   text-shadow: 0 0 2px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff, 0 0 5px #fff, 0 0 5px #fff;
   -webkit-box-shadow: 0px -8px 8px 0 rgba(255,255,255,0.5);
   box-shadow: 0px -8px 8px 0 rgba(255,255,255,0.5);
+  z-index: -99;
 }
 .deck-container .bottom-third-white {
   background-color: #fff;
@@ -794,6 +838,7 @@ table.data tbody tr.even td {
   text-shadow: 0 0 2px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff, 0 0 5px #fff, 0 0 5px #fff;
   -webkit-box-shadow: 0px -8px 8px 0 rgba(255,255,255,0.5);
   box-shadow: 0px -8px 8px 0 rgba(255,255,255,0.5);
+  z-index: -99;
 }
 .deck-container .slide .bottom-black {
   float: left;
@@ -805,6 +850,7 @@ table.data tbody tr.even td {
   background-color: #000;
   -webkit-box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5);
   box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5);
+  z-index: -99;
 }
 .deck-container .slide .bottom-half-black {
   float: left;
@@ -816,6 +862,7 @@ table.data tbody tr.even td {
   background-color: #000;
   -webkit-box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5);
   box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5);
+  z-index: -99;
 }
 .deck-container .slide .bottom-third-black {
   float: left;
@@ -827,6 +874,7 @@ table.data tbody tr.even td {
   background-color: #000;
   -webkit-box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5);
   box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5);
+  z-index: -99;
 }
 .deck-container .slide .top-half-black {
   float: left;
@@ -851,6 +899,7 @@ table.data tbody tr.even td {
   left: 400px;
   color: #000;
   text-shadow: 0 0 2px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  z-index: -99;
 }
 .deck-container .left-half-white {
   background-color: #fff;
@@ -862,6 +911,7 @@ table.data tbody tr.even td {
   left: 0px;
   color: #000;
   text-shadow: 0 0 2px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  z-index: -99;
 }
 /**
  * highlight blocks
@@ -2156,6 +2206,42 @@ p.speech-right:after {
   height: 1em;
   overflow: hidden;
   margin: 50px 0 70px 65px;
+}
+/**
+ * flexbox
+ */
+.flex-container,
+.flex-container-column {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.flex-container-column {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.flex-end {
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -o-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.flex-start {
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 @-moz-keyframes anim_blur {
   0% {
