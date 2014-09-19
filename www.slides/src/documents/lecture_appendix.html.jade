@@ -1,17 +1,22 @@
 ---
 layout: 'default2'
-title: 'Appendix: Some Theoretical Issues'
+title: 'Appendix: Theoretical Background'
 weburl: ''
 units: []
 lecture_date: '2014/09/25'
 ---
 
-include ../../fragments/slide_mixins
+include ../../fragments/lecture_mixins
 
 - var images = get_images('bees')
 
-mixin title_slide({document:document, images:images})
++title_slide({document:document, images:images})
 
+
+//- *** all these need revising: just taken from Warwick 2013-4 lectures!
+
+//- Core Knowledge and Modularity
++insert_unit({unit:'231', title_slide:false, images:images})
 
 
 //- Core Knowledge
@@ -25,3 +30,7 @@ mixin title_slide({document:document, images:images})
 
 //- syntax: knowledge or core knowledge (short)
 +insert_unit({unit:'646', title_slide:true, images:images})
+
+
+//- Computation is the Real Essence of Core Knowledge 
++insert_unit({unit:'291', title_slide:false, images:images})
