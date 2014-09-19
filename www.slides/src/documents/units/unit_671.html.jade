@@ -21,14 +21,13 @@ include ../../../fragments/origins_mixins
   .notes Why are we asking this question?
   .notes Let me try to explain it like this ...
 
-- param = {step:false}
-+slide_rh_white(param)
++slide_rh_white({step:false})
   .notes Recall what we said about comprehending and producing pointing gestures ...
   +run_across
     p.center Informative pointing
   +left_half
     +to_comprehend
-  +right_half(param)
+  +right_half({step:false})
     +to_produce
   +invert('.know, .communicate')
   .notes Both comprehending and producing require knowing things about communication.
@@ -146,21 +145,48 @@ mixin slide_the_question()
   +slide_the_question
   .notes But why are we even considering this idea, the idea that children have a Gricean understanding of communication?
   .notes Because it seems to be the view favoured by Tomasello, Carpenter, Liszkowski et al, who are leading experts on pointing ...
-  
+
++slide
+  .notes Tomasello takes infants' pointing to be based on what he calls shared intentionality.
+  .step1
+    p shared intentionality
+    p.em-above.handout.show
+      span.blur-except ‘infant pointing is best understood
+      span ---on many levels and in many ways---
+      span.blur-except as depending on 
+      span uniquely human skills and motivations for 
+      span.cooperation cooperation
+      span  and 
+      span.shared-intentionality.blur-except shared intentionality
+      span , which enable such things as joint intentions and joint attention in truly collaborative interactions with others (Bratman, 1992; Searle, 1995).’
+    p.right Tomasello et al (2007, p. 706)
+    .handout.ctd \citep[p.\ 706]{Tomasello:2007fi}
+  .notes It's hard to argue with the claim about cooperation; this is important.
+  +invert('.cooperation')
+  .notes But Tomasello doesn't stick with the notion of cooperation.  Instead ...
+  +fade_('.cooperation')
+  +invert('.shared-intentionality')
+  .notes: :t()
+    There is this additional element, shared intentionality.  I don't understand what it is, but 
+    Tomasello and his colleagues are extraordinay scientsits so I think it's worth exploring.
+  .notes: :t()
+    This (shared intentionality) is also the notion that gets us into trouble.
+
+    
 +slide
   .notes Here's what I take to be the view of Tomasello and colleagues.
   p Theory of communicative action (Tomasello et al?):
-  .handout Theory of communicative action \citep[compare][]{Tomasello:2007fi}:
-  .handout \begin{enumerate}
+  .handout.notes Theory of communicative action \citep[compare][]{Tomasello:2007fi}:
+  .handout.notes \begin{enumerate}
   ol
-    .handout \item
-    li.handout.show  Producing and understanding declarative pointing gestures constitutively involves embodying (?) 
+    .handout.notes \item
+    li.handout.notes.show  Producing and understanding declarative pointing gestures constitutively involves embodying (?) 
       span.shared-intentionality shared intentionality.
-    .handout \item
-    li.handout.show Embodying shared intentionality involves having knowledge about knowledge of your intentions about my intentions.
-  .handout \end{enumerate}
+    .handout.notes \item
+    li.handout.notes.show Embodying shared intentionality involves having knowledge about knowledge of your intentions about my intentions.
+  .handout.notes \end{enumerate}
   +invert('.shared-intentionality')
-  .notes No, I don't know what that is either.  I've asked you to find out in the last essay for this course.
+  .notes No, I don't know what shared intentionality is either.  I've asked you to find out in the last essay for this course.
   +uninvert_('.shared-intentionality')
   .slide
     p.em-above Claims about development:
@@ -235,7 +261,7 @@ mixin slide_the_question()
     .notes First consider the wave from earlier ...
 
 
-+slide_rh_white2
++slide_rh_white
   .notes An example contrasting Grice and Davidson on the wave.
   +left_half
     p Grice
@@ -248,7 +274,7 @@ mixin slide_the_question()
       span  that I 
       span.intention intend
       span  to get Ben to come over.
-  +right-half
+  +right_half
     p Davidson
     p.em-above Goal: get Ben to come over
     p.em-above Semantic Intention: that Ben take this wave to 
@@ -264,7 +290,7 @@ mixin slide_the_question()
   .notes What this involves depends, of course, on how we understand meaning.
   .notes But maybe there is a way of understanding meaning on which this is not too demanding. (I'm really not sure.)
   
-+slide_rh_white2
++slide_rh_white
   .notes Now contrast Grice and Davidson on the pointing action from the Hare et al study, where you're supposed to take one of two containers.
   +left_half
     p Grice
@@ -277,7 +303,7 @@ mixin slide_the_question()
       span that I am pointing to the left container with the 
       span.intention intention
       span  that she select the left container.
-  +right-half
+  +right_half
     p Davidson
     p.em-above Goal: get Ayesha to select the left container
     p.em-above Semantic Intention: that Ayesha take this pointing gesture to 

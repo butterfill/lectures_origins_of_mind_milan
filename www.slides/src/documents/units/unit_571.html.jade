@@ -1,6 +1,6 @@
 ---
 layout: 'deck_unit'
-title: "Grice/Tomasello"
+title: "Appendix: Grice/Tomasello (optional)"
 tags: []
 description: "Can we learn anything from Grice's views on meaning about how humans come to acquire abilities to communicate with language?  Michael Tomasello has suggested, in effect, that we can."
 depends: ['']
@@ -13,7 +13,7 @@ exercises_fast: []
 
 include ../../../fragments/slide_mixins
 
-+slide
++slide_middle
   .notes Is there an alternative picture of communication by language, one without mapping or training?
   p.center communication by language without mapping or training
 
@@ -32,22 +32,24 @@ include ../../../fragments/slide_mixins
 
 +slide
   .notes The alternative picture is based on the ideas of Michael Tomasello and his colleagues.
-  p.handout.show ‘children acquire linguistic symbols as a kind of by-product of social interaction with adults’
-  p.right Tomasello 2003, p. 90
-  .handout.ctd \citep[p.\ 90]{Tomasello:2003fk}
-  .em-above 
-  p.handout.show Infants ‘begin to comprehend and use … linguistic symbols on the basis of their skills of social cognition and cultural learning’ 
-  p.right Tomasello, Striano & Rochat 1999, p. 582
-  .handout.ctd \citep[p.\ 582]{Tomasello:1999en}
-  .em-above
-  p.handout.show ‘language is itself one type-albeit a very special type-of joint attentional skill’ 
-  p.right Tomasello 2001, p. 1120
-  .handout.ctd \citep[p.\ 1120]{Tomasello:2001ic}
-
-+slide
-  p.handout.show ‘the kind of rational activity which the use of language involves is a form of rational cooperation’ 
-  p.right Grice 1989, p. 341
-  .handout.ctd \citep[p.\ 341]{Grice:1989ha}
+  .step1
+    p.handout.show ‘children acquire linguistic symbols as a kind of by-product of social interaction with adults’
+    p.right Tomasello 2003, p. 90
+    .handout.ctd \citep[p.\ 90]{Tomasello:2003fk}
+    .em-above 
+    .slide
+      p.handout.show Infants ‘begin to comprehend and use … linguistic symbols on the basis of their skills of social cognition and cultural learning’ 
+      p.right Tomasello, Striano & Rochat 1999, p. 582
+      .handout.ctd \citep[p.\ 582]{Tomasello:1999en}
+      .em-above
+      p.handout ‘language is itself one type-albeit a very special type-of joint attentional skill’ 
+      //- p.right Tomasello 2001, p. 1120
+      .handout.ctd \citep[p.\ 1120]{Tomasello:2001ic}
+  +blur_('.step1')
+  .slide
+    p.handout.show ‘the kind of rational activity which the use of language involves is a form of rational cooperation’ 
+    p.right Grice 1989, p. 341
+    .handout.ctd \citep[p.\ 341]{Grice:1989ha}
  
 
 
@@ -100,5 +102,6 @@ include ../../../fragments/slide_mixins
 
 
 +slide
-  // ***todo update diagram (no meanings, past intentions)
+  .notes ***todo update diagram (no meanings, past intentions)
+  .notes *Utterances of words are gestures ... (link to non-verbal communication)
   img(src='/img/fig_lexical_innovation.png')
