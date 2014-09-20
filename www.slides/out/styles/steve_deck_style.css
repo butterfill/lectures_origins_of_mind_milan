@@ -23,6 +23,12 @@ html {
   background: -webkit-gradient(radial, center center, 0, center center, 250, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.8)));
   background: -webkit-gradient(radial, center center, 0, center center, 250, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.8)));
 }
+.background-color {
+  background-color: #000;
+}
+.text-color {
+  color: #fff;
+}
 /**
  * overwrite core defaults
  */

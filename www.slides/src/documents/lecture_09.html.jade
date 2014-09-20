@@ -1,0 +1,20 @@
+---
+layout: 'default2'
+title: 'Lecture 09'
+weburl: ''
+units: [] 
+lecture_date: '2014/09/25'
+handout: false
+---
+
+include ../../fragments/lecture_mixins
+
+- var images = get_images('bees')
+
+mixin title_slide({document:document, images:images})
+
+
+
+
+//- conclusion
++insert_unit({unit:'999', title_slide:true, images:images})

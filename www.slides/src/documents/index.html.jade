@@ -41,8 +41,9 @@ html
                 p Date given: #{moment(lecture.lecture_date).format('dddd Do MMMM YYYY')}
               p 
                 a(href='#{lecture.url}',target='_blank') slides
-                |  , 
-                a(href='/handouts/#{lecture.basename}.handout.pdf',target='_blank') handout [pdf]
+                if !('handout' in lecture) || lecture.handout===true || lecture.handout==='true'
+                  |  , 
+                  a(href='/handouts/#{lecture.basename}.handout.pdf',target='_blank') handout [pdf]
               
               .units(style='border-left: 1px dotted grey;margin-left: -1px;')
                 div(style="padding-left:2em;")

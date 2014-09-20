@@ -826,6 +826,8 @@ As we'll see, we can find an answer to the first question by thinking about the 
 e.g. impetus vs Newtonian mechanics, is closely related to the question of how you make 
 predictions about objects' movements and interactions.)
           </div>
+          <div data-what=" li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
           <div class="notes">Although the first is out current question, we'll approach it by asking the second.
           </div>
         </div>
@@ -843,53 +845,257 @@ predictions about objects' movements and interactions.)
           <div class="notes">\dfGoalAscription{}</div>
           <div data-what=".step1" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-          <div class="notes">Pure goal ascription is goal ascription which occurs independently of any knowledge of mental states.  Here we consider two accounts of pure goal ascription, one involving the teleological stance the other involving motor cognition.</div>
+          <div class="notes">Pure goal ascription is goal ascription which occurs independently of any knowledge of mental states.  </div>
           <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-          <div class="notes">In looking for an alternative model of action we are also asking, How could pure goal ascription work?</div>
-          <div class="notes">Could you maybe think about the goal and not the intention and that would be enough?</div>
-          <div class="notes">Well no because a goal is just an outcome.  Let me try to explain with an example ...</div>
+          <div class="notes">In looking for an alternative model of action we are also asking, How could pure goal 
+ascription work?
+Could you maybe think about the goal and not the intention and that would be enough?
+Well no because a goal is just an outcome.  Let me try to explain with an example ...
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 <section class="slide"><img src="/img/slide_budapest_lecture06_019.jpg" class="bkg"/>
-  <div class="notes">Earlier I said that \dfGoalAscription{}</div>
-  <div class="notes">Given this definition, goal ascription involves representing three things:</div>
-  <div class="notes">\begin{enumerate}</div>
-  <div class="notes">\item an action</div>
-  <div class="notes">\item an outcome</div>
-  <div class="notes">\end{enumerate}</div>
-  <div class="notes">and</div>
-  <div class="notes">\begin{enumerate}[resume]</div>
-  <div class="notes">\item the directedness of the action to the outcome.</div>
-  <div class="notes">\end{enumerate}</div>
-  <div class="notes">&nbsp;</div>
-  <div class="notes">It is important to see that the third item---representing the directedness---is necessary.</div>
-  <div class="notes">This is quite simple but very important, so let me slowly explain why goal ascription requires representing the directedness of an action to an outcome.</div>
-  <div class="notes">Imagine two people, Ayesha and Beatrice, who each intend to break an egg.</div>
-  <div class="notes">Acting on her intention, Ayesha breaks her egg.</div>
-  <div class="notes">But Beatrice accidentally drops her egg while carrying it to the kitchen.</div>
+  <div class="notes">Earlier I said that \dfGoalAscription{}
+Given this definition, goal ascription involves three things:
+\begin{enumerate}
+\item representing an action
+\item representing an outcome
+\end{enumerate}
+and
+\begin{enumerate}[resume]
+\item capturing the directedness of the action to the outcome.
+\end{enumerate}
+&nbsp;
+  </div>
+  <div class="notes">It is important to see that the third item---capturing directedness---is necessary.
+This is quite simple but very important, so let me slowly explain why goal ascription requires 
+representing the directedness of an action to an outcome.
+Imagine two people, Ayesha and Beatrice, who each intend to break an egg.
+Acting on her intention, Ayesha breaks her egg.
+But Beatrice accidentally drops her egg while carrying it to the kitchen.
+  </div>
 </section>
 <section class="slide"><img src="/img/slide_budapest_lecture06_020.jpg" class="bkg"/>
-  <div class="notes">So Ayesha and Beatrice perform visually similar actions which result in the same type of outcome, the breaking of an egg; </div>
-  <div class="notes">	but Beatrice's action is not directed to the outcome of her action whereas Ayesha's is.</div>
+  <div class="notes">So Ayesha and Beatrice perform visually similar actions which result in the same type of outcome, the breaking of an egg; 
+but Beatrice's action is not directed to the outcome of her action whereas Ayesha's is.
+  </div>
 </section>
 <section class="slide"><img src="/img/slide_budapest_lecture06_021.jpg" class="bkg"/>
-  <div class="notes">Goal ascription requires the ability to distinguish between Ayesha's action and Beatrice's action. </div>
-  <div class="notes">This requires representing not only actions and outcomes but also the directedness of actions to outcomes.</div>
-  <div class="notes">&nbsp;</div>
-  <div class="notes">This is why I say that goal ascription requires representing the directedness of an action to an outcome, and not just representing the action and the outcome.</div>
+  <div class="notes">Goal ascription requires the ability to distinguish between Ayesha's action and Beatrice's 
+action. 
+This requires representing not only actions and outcomes but also the directedness of actions 
+to outcomes.
+  </div>
+  <div class="notes">This is why I say that goal ascription requires capturing the directedness of an action to an 
+outcome, and not just representing the action and the outcome.
+  </div>
 </section>
 <section class="slide">
   <div class="container_12">
     <div class="grid_12 ">
       <div class="words">
         <div class="middle">
-          <div class="notes">So how could pure goal ascription work?</div>
-          <div class="notes">How could we represent the directedness of an action to an outcome without representing an intention?</div>
+          <div class="notes">So how could pure goal ascription work?
+How could we represent the directedness of an action to an outcome without representing an 
+intention?
+          </div>
           <p class="center"><span class="step2">How could </span><span class="step1 italic">pure </span><span>goal ascription </span><span class="step2">work?</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="big-goal-ascription-slide" class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">To explain the possibility of pure goal ascription we need to find 
+a relation, $R$, such that:
+\begin{enumerate}
+\item reliably, $R(a,G)$ when and only when $a$ is directed\footnotemark to $G$; 
+\item $R(a,G)$ is readily detectable; and 
+\item $R(a,G)$ is readily detectable independently of any knowledge of mental states.
+\end{enumerate}
+        </div>
+        <div class="notes">\footnotetext{</div>
+        <div class="notes ctd">We want this to be true whether $a$’s being directed to $G$ involves intention, function or 
+motor representation.
+}
+        </div>
+        <div class="notes">We can make progress in explaining how pure goal ascription could work by identifying one or 
+more values of $R$.
+What could $R$ be?
+        </div>
+        <p class="em-above">Three requirements ...</p>
+        <ol type="i" style="list-style-type: lower-roman" class="three-requirements">
+          <li>reliably, R(a,G) <span class="when">when</span><span> and </span><span class="only-when">only when</span><span> a is directed to G</span></li>
+          <li>R(a,G) is readily detectable ...</li>
+          <li>... without any knowledge of mental states</li>
+        </ol>
+        <div class="notes">What could this relation be?</div>
+        <table>
+          <tr class="idea1 hide">
+            <td>R(a,G) </td>
+            <td style="padding-left:.5em;padding-right:.5em;">=<sub>df</sub></td>
+            <td> a causes G ?</td>
+          </tr>
+          <tr class="idea2 hide">
+            <td>R(a,G) </td>
+            <td style="padding-left:.5em;padding-right:.5em;">=<sub>df</sub></td>
+            <td> G is a <span class="teleological-function">teleological function</span><span> of a ?</span></td>
+          </tr>
+          <tr class="idea3 hide">
+            <td>R(a,G) </td>
+            <td style="padding-left:.5em;padding-right:.5em;">=<sub>df</sub></td>
+            <td> <span class="qqq">???</span><span class="remove-me the-idea">a is the most justifiable action towards G available within the constraints of reality</span></td>
+          </tr>
+          <tr class="idea3-reformulated hide">
+            <td></td>
+            <td style="padding-left:.5em;padding-right:.5em;">=<sub>df</sub></td>
+            <td>(1)-(5) are true </td>
+          </tr>
+        </table>
+        <div data-what=".idea1" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">How about taking $R$ to be causation?
+That is, how about defining $R(a,G)$ as $a$ causes $G$?
+        </div>
+        <div data-what=" .three-requirements li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">This proposal does meet the second requirement: causal relations are readily detectable,
+even by infants, as we saw.
+        </div>
+        <div data-what=" .three-requirements li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" .three-requirements li:eq(2)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">This proposal also meets the third requirement: causal relations do not generally require 
+identifying mental states
+        </div>
+        <div data-what=" .three-requirements li:eq(2)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" .three-requirements li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">But this proposal does not meet the first criterion, (1), above.
+(This is the requirement that reliably, R(a,G) when and only when a is directed to G.)
+We can see this by mentioning two problems.
+        </div>
+        <div data-what=" .only-when" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">First problem: actions typically have side-effects which are not goals.
+For example,
+suppose that I walk over here with the goal of being next to you.
+This action has lots of side-effects: 
+\begin{itemize}
+\item I will be at this location.
+\item I will expend some energy.
+\item I will be further away from the front
+\end{itemize}
+These are all causal consequence of my action.
+But they are not goals to which my action is directed.
+So this version of $R$ will massively over-generate goals.
+        </div>
+        <div data-what=" .only-when" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" .when" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Second problem: actions can fail.  [...]
+So this version of $R$ will under-generate goals.
+        </div>
+        <div data-what=" .when" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" .three-requirements li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".idea1" data-attr="-webkit-filter:blur(3px)" class="slide anim-continue anim-attribute"></div>
+        <div data-what=".idea2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Why not define $R$ in terms of teleological function?
+        </div>
+        <div data-what=" .idea2 .teleological-function" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div data-what=" .idea2 .teleological-function" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-removeclass"></div>
+        <div class="slide about-teleological-function">
+          <div style="position: absolute; top:0; left:0; width:100%; height:100%" class="background-color">
+            <p>aside: what is a teleological function?</p>
+            <div class="notes">What do we mean by teleological function?
+            </div>
+            <div class="slide">
+              <div class="notes">Here is an example:
+%
+\begin{quote}
+              </div>
+              <p class="em-above notes show">      Atta ants cut leaves in order to fertilize their fungus crops (not to thatch the entrances to their homes) \citep{Schultz:1999ps}</p>
+              <div class="notes">     \end{quote}</div>
+            </div>
+            <div class="slide">
+              <div class="notes">What does it mean to say that the ants’ grass cutting has this goal rather than some other? According to Wright:
+\begin{quote}
+              </div>
+              <p class="em-above notes show">‘S does B for the sake of G iff: (i) B tends to bring about G; (ii) B occurs because (i.e. is brought about by the fact that) it tends to bring about G.’ (Wright 1976: 39)</p>
+              <div class="notes">\end{quote}</div>
+            </div>
+            <div class="slide">
+              <div class="notes">For instance:
+%
+\begin{quote}
+              </div>
+              <p class="em-above notes show">The Atta ant cuts leaves in order to fertilize iff: (i) cutting leaves tends to bring about fertilizing; (ii) cutting leaves occurs because it tends to bring about fertilizing.</p>
+              <div class="notes">\end{quote}</div>
+            </div>
+          </div>
+        </div>
+        <div data-what=".about-teleological-function *" data-class="hide" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">So, to return to the idea, why not define $R$ in terms of teleological function?
+        </div>
+        <div data-what=" .three-requirements li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">I do not think this idea will enable us to meet the second condition.
+How could we tell whether an action happens \emph{because} it brought about a particular 
+outcome in the past? 
+This might be done with insects.
+But it can's so easily be done with primates, who have a much broader repertoire of actions
+and wider range of motivations.
+        </div>
+        <div data-what=" .three-requirements li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" .three-requirements li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">There is a related problem with the first requirement.
+The problem is that we primates can perform old actions in order to achieve novel goals.
+In such cases there will be a mismatch between the goals of our actions and their teleological 
+functions.
+Maybe we should allow that this idea will sometimes enable goal ascription to succeed,
+but it will probably not allow for a very wide range of goals to be correctly ascribed.
+        </div>
+        <div data-what=" .three-requirements li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".idea2" data-attr="-webkit-filter:blur(3px)" class="slide anim-continue anim-attribute"></div>
+        <div data-what=".idea3" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">So what could R be?  I think we can get a good idea by considering Csibra and Gergely's
+ideas about the teleological stance.
+They are making (in effect) a promising proposal about R.
+        </div>
+        <div class="slide">
+          <div class="teleological-stance-quote">
+            <p>‘an action can be explained by a goal state if, and only if, it is seen as the most justifiable action towards that goal state that is available within the constraints of reality’</p>
+            <p class="right">(Csibra & Gergely 1998: 255)</p>
+          </div>
+        </div>
+        <div data-what=".teleological-stance-quote" data-class="hide" class="slide anim-continue anim-addclass"></div>
+        <div data-what=".idea3 .qqq" data-class="remove-me" class="slide anim-continue anim-addclass"></div>
+        <div data-what=".idea3 .the-idea" data-class="remove-me" class="slide anim-continue anim-removeclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">This idea needs further scrutiny ...</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">So here we are discussing what Gergely & Csibra call teleological stance </div>
+          <p class="center">the teleological stance (Gergely & Csibra)</p>
         </div>
       </div>
     </div>
@@ -900,10 +1106,11 @@ predictions about objects' movements and interactions.)
     <div class="container_12">
       <div class="grid_12">
         <div class="notes">Csibra and Gergely offer a 'principle of rationality' according to which ...</div>
-        <div class="notes handout">Csibra \& Gergely's principle of rational action: `an action can be explained by a goal state if, and only if, it is seen as the most justifiable action towards that goal state that is available within the constraints of reality.'\citep{Csibra:1998cx,Csibra:2003jv}</div>
-        <div class="handout notes">(Contrast a principle of efficiency:</div>
-        <div class="handout notes ctd">`goal attribution requires that agents expend the least possible amount of energy within their motor constraints to achieve a certain end.' \citep%[p.\ 1061]</div>
-        <div class="handout notes ctd">{Southgate:2008el})</div>
+        <div class="notes handout">Csibra & Gergely's principle of rational action: `an action can be explained by a goal state if, and only if, it is seen as the most justifiable action towards that goal state that is available within the constraints of reality.'\citep{Csibra:1998cx,Csibra:2003jv}</div>
+        <div class="handout notes">(Contrast a principle of efficiency:
+`goal attribution requires that agents expend the least possible amount of energy within their 
+motor constraints to achieve a certain end' \citep[p.\ 1061]{Southgate:2008el}).
+        </div>
         <div class="notes">&nbsp;  </div>
         <div class="notes">This principle plays two distinct roles.</div>
         <div class="notes">One role is mechanistic: this principle forms part of an account of how infants (and others) actually ascribe goals.</div>
@@ -962,6 +1169,26 @@ predictions about objects' movements and interactions.)
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
+        <div class="notes">[*these notes are a bit jumbled ... I'm trying to fix some problems with their view in order
+to focus on a key objection.]
+        </div>
+        <div class="notes">What do we mean by `better means'?
+Problem with defining $R$ in terms of rationality is requirement of core knowledge / modularity.
+So what about efficiency instead of rationality?
+One problem with defining $R$ in terms of minimising energy is that in 
+acting we often face a trade off between how much energy to put into an action and how likely 
+the action is to result in success.
+        </div>
+        <div class="notes">Suppose I can save some energy by throwing the cup at the sink instead of walking over and 
+carefully placing it in the sink,
+and suppose that I choose to walk over and place the cup in the sink.
+In this situation the principle of efficiency fails to identify $G$, placing the cup in the 
+sink, as the goal of my action.
+        </div>
+        <div class="notes">One way to address this problem might be to think of efficiency in terms of achieving a good trade-off between several factors:
+not just energy but also the probability that a particular action will in fact result in the goal being achieved.
+This is the idea I am trying to get at here ...
+        </div>
         <div class="notes">An action of type $a'$ is a better means of realising outcome $G$ in a given situation than an action of type $a$ if, for instance, actions of type $a'$ normally involve less effort than actions of type $a$ </div>
         <div class="notes">in situations with the salient features of this situation </div>
         <div class="notes">and everything else is equal; </div>
@@ -974,9 +1201,9 @@ predictions about objects' movements and interactions.)
         <div class="notes">suppose that I walk over here with the goal of being next to you.</div>
         <div class="notes">This action has lots of side-effects: </div>
         <div class="notes">\begin{itemize}</div>
-        <div class="notes">\item 	I will be at this location.</div>
-        <div class="notes">\item	I will expend some energy.</div>
-        <div class="notes">\item	I will be this much further away from the front</div>
+        <div class="notes">\item I will be at this location.</div>
+        <div class="notes">\item I will expend some energy.</div>
+        <div class="notes">\item I will be this much further away from the front</div>
         <div class="notes">\end{itemize}</div>
         <div class="notes">These  are not goals to which my action is directed.</div>
         <div class="notes">But they are things which my action would be a rational and efficient way of bring about.</div>
@@ -1009,6 +1236,72 @@ predictions about objects' movements and interactions.)
       <div class="grid_12">
         <div class="notes">Now so far we've been considering this as an account of how someone could identify to which goal an action is directed without thinking about mental states.</div>
         <div class="notes">That is, this inference is the core component in an account of pure goal ascription.</div>
+        <div class="notes">This gives us, in effect, a specification of R.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div data-which="#big-goal-ascription-slide" class="slide-clone"></div>
+  <div data-what=".idea3-reformulated" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+  <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+  <div class="notes">I've spent some time formulating this idea because I think it's a good candidate.
+We are not yet ready to accept the idea, though.
+Let's consider whether it meets the three requirements.
+  </div>
+  <div data-what=" .three-requirements li:eq(2)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+  <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+  <div class="notes">I take it the third requirement is obviously met
+  </div>
+  <div data-what=" .three-requirements li:eq(2)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+  <div data-what=" .three-requirements li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+  <div data-what=" .three-requirements li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+  <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+  <div class="notes">But what about the first and second requirements?
+It's just here that I think there is a problem we need to solve.
+  </div>
+  <div class="notes">This is the probem.
+How good is the agent at optimising the rationality, or the efficiency, of her actions?
+And how good is the observer at identifying the optimality of actions in relation to outcomes?
+\textbf{
+For the relation to be readily detectible, we want there to be a match between
+(i) how well the agent can optimise her actions
+and
+(i) how well the observer can detect optimality.}
+Failing such a match, the relation R will either not be detectible or not be reliable.
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Csibra and Gergely seem both aware of this issue and dismissive of it.
+        </div>
+        <p class="handout notes show"><span>`Such calculations require </span><span class="highlight">detailed knowledge of biomechanical factors</span><span class="step2 hide"><span> that determine the motion capabilities and energy expenditure of agents. </span><span>However, in the absence of such knowledge, one can appeal to </span><span class="highlight">heuristics</span><span> that approximate the results of these calculations on </span><span>the basis of knowledge in other domains that is certainly available to young infants. </span><span>For example, the length of pathways can be assessed by </span><span class="highlight">geometrical calculations</span><span>, taking also into account some physical factors </span><span>(like the impenetrability of solid objects). </span><span>Similarly, the fewer steps an action sequence takes, the less effort it might require, </span><span>and so </span><span>infants’ </span><span class="highlight">numerical competence</span><span> can also contribute to efficiency evaluation.’</span></span></p>
+        <div data-what=" .highlight" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <p class="right">Csibra & Gergely (forthcoming ms p. 8)</p>
+        <div class="notes">Csibra and Gergely seem both aware of this issue and dismissive of it.
+In short their solution to the problem--the problem of matching optimisation in planning actions 
+with optimisation in predicting them--appears to be to insist that infants just do really
+complex detection.  But this threatens the ready detectibility of the relation.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Let me offer a quick interim summary.</div>
+        <p>summary so far</p>
+        <p class="slide em-above">How could pure goal ascription work?</p>
+        <p class="slide em-above">R(a,G) = ???</p>
+        <p class="slide em-above">teleological stance</p>
+        <p class="slide em-above">problem: detecting optimality</p>
       </div>
     </div>
   </div>
@@ -1018,42 +1311,40 @@ predictions about objects' movements and interactions.)
     <div class="grid_12 ">
       <div class="words">
         <div class="middle">
-          <div class="notes">But insofar as we think of this inference as an heuristic for identifying goals, we haven't answered the question I started with.</div>
-          <div class="notes">Using the inference presupposes that you already understand what it is for an action to be directed to a goal.</div>
-          <p class="center">What do six- or twelve-month-old infants understand of actions and their goals?</p>
-          <div class="notes">But we can also turn it around and use it to define a relation between an action and a goal.</div>
+          <p class="center">a solution?</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="slide"><img src="/img/unit_712/slide_conf_ceu_interacting_mindreaders_19.jpg" class="bkg"/>
+<section class="slide">
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="notes">So let's define a relation between an action and a goal, R(a,G), which obtains just when conditions (1)--(5) are met.</div>
-        <div class="handout">These facts:</div>
-        <div class="handout">      \begin{enumerate}</div>
-        <div class="handout">      \item action $a$ is directed to some goal;</div>
-        <div class="handout">      \item actions of $a$'s type are normally capable of being means of realising outcomes of $G$'s type in situations with the salient (to any concerned) features of this situation;</div>
-        <div class="handout">      \item no alternative type of action is both  typically available to agents of this type  and also  such that actions of this type would be normally be significantly better* means of realising outcome $G$ in situations with the salient features of this situation;</div>
-        <div class="handout">      \item the occurrence of outcome $G$ is typically desirable for agents of this type;</div>
-        <div class="handout">      \end{enumerate}</div>
-        <div class="handout">      \begin{enumerate}[resume]</div>
-        <div class="handout">      \item there is no other outcome, $G'$,  the occurrence of which would be at least comparably desirable for agents of this type  and where (2) and (3) both hold of $G'$ and $a$</div>
-        <div class="handout">      \end{enumerate}</div>
-        <div class="handout">      may jointly constitute defeasible evidence for the conclusion that:</div>
-        <div class="handout"> \begin{enumerate}[resume]</div>
-        <div class="handout">      \item $G$ is a goal to which action $a$ is directed.</div>
-        <div class="handout">      \end{enumerate}</div>
-        <div class="handout">      {</div>
-        <div class="handout">      \footnotesize</div>
-        <div class="handout">      *An action of type $a'$ is a better means of realising outcome $G$ in a given situation than an action of type $a$ if, for instance, actions of type $a'$ normally involve less effort than actions of type $a$ </div>
-        <div class="handout">      in situations with the salient features of this situation </div>
-        <div class="handout">      and everything else is equal; </div>
-        <div class="handout">      or if, for example, actions of type $a'$ are normally more likely to realise outcome $G$ than actions of type $a$ in situations with the salient features of this situation </div>
-        <div class="handout">      and everything else is equal.</div>
-        <div class="handout">      }</div>
+        <p class="notes show">goal ascription is acting in reverse</p>
+        <div class="notes">The idea is that we could solve the problem--the problem of matching optimisation in planning 
+actions 
+with optimisation in predicting them--by supposing that a single set of mechanisms is used 
+twice, once in planning action and once again in observing them.
+        </div>
+        <div class="notes">What does this require?
+        </div>
+        <div class="slide">
+          <p class="em-above notes show">-- in action observation, possible outcomes of observed actions are represented</p>
+        </div>
+        <div class="slide">
+          <p class="em-above notes show">-- these representations trigger planning as if performing actions directed to the outcomes</p>
+        </div>
+        <div class="slide">
+          <p class="em-above notes show">-- such planning generates predictions</p>
+          <div class="notes">predictions about joint displacements and their sensory conseuqences</div>
+        </div>
+        <div class="slide">
+          <p class="em-above notes show">-- a triggering representation is weakened if its predictions fail</p>
+        </div>
+        <div class="notes">The proposal is not specific to the idea of motor representations and processes,
+although there is good evidence for it (which I won't cover here because we're in Milan!)
+        </div>
       </div>
     </div>
   </div>
@@ -1061,46 +1352,85 @@ predictions about objects' movements and interactions.)
 <section class="slide">
   <div class="words">
     <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">(Do you remember Dennett's ingeneous twist in The Intentional Stance?  We're making the same move here.)</div>
-        <p class="handout show">‘What it is to be a true believer is to be … a system whose behavior is reliably and voluminously predictable via the intentional strategy.’</p>
-        <div class="handout ctd">\citep[p.\ 15]{Dennett:1987sf}</div>
-        <p class="right">Dennett 1987, p. 15</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
+      <div class="grid_12"> 
+        <div class="notes">So here is my proposal about how pure goal ascription could work.</div>
+        <ol type="i" style="list-style-type: lower-roman" class="three-requirements">
+          <li>reliably, R(a,G) <span class="when">when</span><span> and </span><span class="only-when">only when</span><span> a is directed to G</span></li>
+          <li>R(a,G) is readily detectable ...</li>
+          <li>... without any knowledge of mental states</li>
+        </ol>
+        <p>&nbsp;</p>
         <table>
-          <tr>
+          <tr class="idea3">
             <td>R(a,G) </td>
             <td style="padding-left:.5em;padding-right:.5em;">=<sub>df</sub></td>
-            <td> (1)--(5) are true</td>
+            <td> <span>a is the most justifiable action towards G available within the constraints of reality</span></td>
           </tr>
-          <tr class="hide step2">
-            <td></td>
-            <td style="padding-left:.5em;padding-right:.5em;">≈ </td>
-            <td class="em-above">a is the most justifiable action towards G available within the constraints of reality</td>
+          <tr class="idea4 hide">
+            <td>R<sub>M</sub><span>(a,G) </span></td>
+            <td style="padding-left:.5em;padding-right:.5em;">=<sub>df</sub></td>
+            <td> if M were tasked with producing G it would plan action a</td>
           </tr>
         </table>
+        <div data-what=".idea3" data-attr="text-decoration:line-through" class="slide anim-continue anim-attribute"></div>
+        <div data-what=".idea4" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">So here's the idea.
+The relation $R(a,G)$ should be defined relative to a planning mechanism.
+For planning mechanism $M$, $R{_M}(a,G)$ holds just if $M$ 
+were tasked with producing $G$ it would plan action $a$.
+        </div>
+        <div data-what=" .three-requirements li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what=" .three-requirements li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">With respect to the problems for the teleological stance, 
+which was about matching observer and agent, 
+we ensure a match insofar as observer an agent have similar planning mechanisms; 
+this means, of course, that they must have similar expertise.
+        </div>
+        <div class="notes">We also ensure we get good  trade-offs---we get the right principle by deferring to the kinds 
+of planning mechanism responsible for producing the action.
+        </div>
+        <div data-what=" .three-requirements li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" .three-requirements li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+        <div class="slide">
+          <div class="notes">So I'm rejecting this claim.</div>
+          <div class="notes">Pure goal ascription need not involve reasoning at all.</div>
+          <p>&nbsp;</p>
+          <p class="handout notes show">‘when taking the teleological stance one-year-olds apply the same inferential principle of rational action that drives everyday mentalistic reasoning about intentional actions in adults’</p>
+          <p class="right handout notes ctd show">(György Gergely and Csibra 2003; cf. Csibra, Bíró, et al. 2003; Csibra and Gergely 1998: 259)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Let me return to the two questions I started this section with:</div>
+        <ol class="notes show">
+          <li>What model of action underpins  six- or twelve-month-old infants’ abilities to track the goals of actions? </li>
+          <li>How could infants identify goals without ascribing intentions?
+            <p>(I.e., How could pure goal ascription work?)</p>
+            <p class="step2 hide">Answer: goal ascription is acting in reverse</p>
+          </li>
+        </ol>
+        <div data-what=" li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">So far we've been discussing this question.</div>
+        <div class="notes">My answer is simple</div>
         <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="slide">
-          <p class="em-above">Three requirements ...</p>
-          <ol>
-            <li>reliably: R(a,G) when and only when a is directed to G
-              <div class="notes">This is what we've just shown in arguing about (1)-(5)</div>
-            </li>
-            <li class="slide">R(a,G) is detectable without any knowledge of mental states
-              <div class="notes">This seems to follow from the way it's defined.</div>
-            </li>
-            <li class="slide">R(a,G) is  readily detectable
-              <div class="notes">This is an issue I'll come back to later.</div>
-            </li>
-          </ol>
+        <div class="notes">Answer: goal ascription is acting in reverse</div>
+        <div data-what=" li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">But what about the first question?
+To describe how they identify goals (that is, distinguish among the actual and possible 
+outcomes of an action which its goals are) 
+is not yet quite to have explained how they model actions.
+Fortunately not much more is needed ...
         </div>
       </div>
     </div>
@@ -1110,6 +1440,7 @@ predictions about objects' movements and interactions.)
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
+        <div class="notes">Recall that a model of action has to explain in virtue of what an action is directed to a goal.</div>
       </div>
     </div>
   </div>
@@ -1118,6 +1449,36 @@ predictions about objects' movements and interactions.)
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
+        <div class="notes">This, as I mentioned, is standardly done by invoking intentions.  But there is another way.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Recall this:</div>
+        <table class="notes show">
+          <tr>
+            <td>R<sub>M</sub><span>(a,G) </span></td>
+            <td style="padding-left:.5em;padding-right:.5em;">=<sub>df</sub></td>
+            <td> if M were tasked with producing G it would plan action a</td>
+          </tr>
+        </table>
+        <p class="em-above"></p>
+        <div class="slide">
+          <div class="notes">Now do you remember Dennett's ingeneous twist in The Intentional Stance?  We're going to make the same move here.</div>
+          <p class="handout notes show">‘What it is to be a true believer is to be … a system whose behavior is reliably and voluminously predictable via the intentional strategy.’</p>
+          <div class="handout notes ctd">\citep[p.\ 15]{Dennett:1987sf}</div>
+          <p class="right">Dennett 1987, p. 15</p>
+          <div class="notes">Dennett was interested in beliefs, but we can make essentially the same move for goals</div>
+          <p class="em-above"></p>
+        </div>
+        <div class="slide">
+          <p class="notes show">An outcome, G, is among the goals of an action, a, exactly if <span>R</span><sub>M</sub><span>(a,G)   </span></p>
+          <div class="notes">The idea is to turn a heuristic into a constitutive claim.</div>
+        </div>
       </div>
     </div>
   </div>
@@ -1125,144 +1486,18 @@ predictions about objects' movements and interactions.)
 <section class="slide"><img src="/img/unit_712/slide_intention_or_r.jpg" class="bkg"/>
   <div class="words">
     <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section id="unit_731" class="slide"><img src="/img/bkg/bees/DSC_0170_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">Problems for the Teleological Stance?</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{Problems for the Teleological Stance?}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{Problems for the Teleological Stance?}</div>
-<!---->
-<!-- short form:-->
-<!--  remove_class('.blur')-->
-<!-- long forms:-->
-<!--  remove_class('.elements', 'blur')-->
-<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
-<!---->
-<!-- ***todo unfinished-->
-<!-- also contains material for the part on motor representation-->
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p>‘when taking the teleological stance one-year-olds apply the same inferential principle of rational action that drives everyday mentalistic reasoning about intentional actions in adults’</p>
-        <p class="right">(György Gergely and Csibra 2003; cf. Csibra, Bíró, et al. 2003; Csibra and Gergely 1998: 259)</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Recall this ...</div>
-        <div class="notes">Problem with defining $R$ in terms of rationality is requirement of core knowledge / modularity.</div>
-        <div class="notes">So what about efficiency instead of rationality?</div>
-        <div class="notes">One problem with defining $R$ in terms of minimising energy is that in acting we often face a trade off between how much energy to put into an action and how likely the action is to result in success.</div>
-        <div class="notes">Suppose I can save some energy by throwing the cup at the sink instead of walking over and carefully placing it in the sink,</div>
-        <div class="notes">and suppose that I choose to walk over and place the cup in the sink.</div>
-        <div class="notes">In this situation the principle of efficiency fails to identify $G$, placing the cup in the sink, as the goal of my action.</div>
-        <div class="notes">One way to address this problem might be to think of efficiency in terms of achieving a good trade-off between several factors:</div>
-        <div class="notes">not just energy but also the probability that a particular action will in fact result in the goal being achieved.</div>
-        <div class="notes">\subsubsection{Third problem: matching observer and agent}</div>
-        <div class="notes">A third potential problem concerning the reliability of both ideas, rationality and energy is even more obvious.</div>
-        <div class="notes">How good is the agent at optimising the rationality, or the efficiency, of her actions?</div>
-        <div class="notes">And how good is the observer at identifying the optimality of actions in relation to outcomes?</div>
-        <div class="notes">\textbf{</div>
-        <div class="notes">If there are too many discrepancies between</div>
-        <div class="notes">		how well the agent can optimise her actions</div>
-        <div class="notes">	and</div>
-        <div class="notes">		how well the observer can detect optimality,</div>
-        <div class="notes">then these principles will fail to be sufficiently reliable}.</div>
-        <table>
-          <tr>
-            <td>R(a,G) </td>
-            <td style="padding-left:.5em;padding-right:.5em;">=<sub>df</sub></td>
-            <td> (1)--(5) are true</td>
-          </tr>
-          <tr class="step2">
-            <td></td>
-            <td style="padding-left:.5em;padding-right:.5em;">≈ </td>
-            <td class="em-above">a is the most justifiable action towards G available within the constraints of reality</td>
-          </tr>
-        </table>
-        <p class="em-above">Three requirements ...</p>
-        <ol>
-          <li>reliably: R(a,G) when and only when a is directed to G</li>
-          <li>R(a,G) is detectable without any knowledge of mental states</li>
-          <li>R(a,G) is  readily detectable</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture06_048.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture06_049.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture06_050.jpg" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
       <div class="grid_12"> 
+        <div class="notes">So the infants' model of action is one on which goals are goals in virtue of relations
+between planning mechanisms and outcomes.
+        </div>
+        <div class="notes">Note that this may not be a fully accurate model of action. 
+Just like impetus mechanics, it is useful even if only approximate.
+        </div>
       </div>
     </div>
   </div>
 </section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">***add quote!</div>
-        <p>Premack: evidence of motor efficiency</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">*** explain the idea: mindreading is acting in reverse</div>
-        <div class="notes">*** so, why not think of goal ascription as part of acting in reverse too?</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture06_007.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture06_008.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture06_009.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture06_010.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture06_011.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture06_012.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture06_013.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture06_014.jpg" class="bkg"/>
-</section>
-<section class="slide"><img src="/img/slide_budapest_lecture06_015.jpg" class="bkg"/>
-</section>
-<!---->
-<!--  //- pure goal ascription-->
-<!--  - var img_nos = range(52,66)-->
-<!--  each img_no in img_nos-->
-<!--    - var filename = 'slide_budapest_lecture06_0'+(img_no<10 ? '0' : '')+img_no+'.jpg'-->
-<!--    +slide_img(filename)-->
-<section id="unit_741" class="slide"><img src="/img/bkg/bees/DSC_0200_crop.jpg" class="bkg"/>
+<section id="unit_741" class="slide"><img src="/img/bkg/bees/DSC_0170_crop.jpg" class="bkg"/>
   <div class="spacer">&nbsp;</div>
   <div style="" class="title-block">
     <div class="title-container">
@@ -1285,18 +1520,25 @@ predictions about objects' movements and interactions.)
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <p>Summary: How do humans come to know truths about actions?</p>
+        <p>Summary: How do humans first come to know truths about actions?</p>
         <ol>
-          <li class="slide">evidence</li>
-          <li class="slide">core knowledge?
-            <div class="notes">Note that Csibra & Gergely offer a continuity hypothesis.</div>
+          <li class="slide">Infants can track the goals of actions from six months or earlier</li>
+          <li class="slide">How?  (How is pure goal ascription possible?)
+            <p>-- goal ascription is acting in reverse</p>
           </li>
-          <li class="slide">How do infants understand actions?
-            <ol style="list-style-type:lower-alpha">
-              <li class="slide"><span>R</span><sub>1</sub><span>(a,G) =</span><sub>df</sub><span>  the agent of a is acting with the intention to bring G about</span></li>
-              <li class="slide"><span>R</span><sub>2</sub><span>(a,G) =</span><sub>df</sub><span>  a is the most rational way for the agent of a to achieve G</span></li>
-              <li class="slide"><span>R</span><sub>3</sub><span>(a,G) =</span><sub>df</sub><span>  ...</span></li>
-            </ol>
+          <li class="slide">How do infants model actions?
+            <div class="notes">Note that Csibra & Gergely offer a continuity hypothesis.</div>
+            <p>--<span>R</span><sub>M</sub><span>(a,G) =</span><sub>df</sub><span>  if M were tasked with producing G it would plan action a</span></p>
+          </li>
+          <li class="slide">Infants have something like core knowledge of action</li>
+          <li class="slide">How to get from that to knowledge of actions?
+            <div class="notes">This is always the sticking point.
+I don't have a suggestion about how the transition might be made.
+I think that experience probably plays a role analogous to it plays in knowledge of colour.
+But there's something else.
+I want to suggest we can use these discoveries about action to fill out our understanding 
+of communication, and of cooperative interactions.
+            </div>
           </li>
         </ol>
       </div>
@@ -1425,393 +1667,6 @@ predictions about objects' movements and interactions.)
   </div>
 </section>
 <section class="slide"><img src="/img/slide_budapest_lecture06_005.jpg" class="bkg"/>
-</section>
-<section id="unit_999" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">Conclusion and Outlook</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{Conclusion and Outlook}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{Conclusion and Outlook}</div>
-<!---->
-<!-- short form:-->
-<!--  remove_class('.blur')-->
-<!-- long forms:-->
-<!--  remove_class('.elements', 'blur')-->
-<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
-<!---->
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="handout">\textbf{Question}
-            <div class="notes">How do humans come to know  about---and to knowingly manipulate---objects, causes, words, numbers, colours, actions and minds?</div>
-          </div>
-          <p class="center">the question</p>
-          <div class="notes">Have we made any progress?</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">case-by-case</p>
-          <div class="notes">If you're wondering what the big idea is, there isn't one.</div>
-          <div class="notes">I think progress depends on approaching it case by case.</div>
-          <div class="notes">For instance, we considered the role of language in two cases, knowledge of colour and knowledge of minds.</div>
-          <div class="notes">It seems to play quite different roles in these two cases.</div>
-          <div class="notes">So while it seems plausible that abilities to communicate by language do play a role in explaining the emergence of knowledge in many domains, it's hard to assign it one role.</div>
-          <div class="notes">There are themes running across the cases but little in the way of general principles.</div>
-          <div class="notes">I'm not saying that's a bad thing; that's just how it is.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">core knowledge</p>
-          <div class="notes">Core knowledge is initially a label for a problem.</div>
-          <div class="notes">With respect to various domains of knowledge including colour, physics and psychology, infants have some but not all of the capacities that are characteristic of knowledge.</div>
-          <div class="notes">So we face a dilemma.</div>
-          <div class="notes">The simplest explanation of what they can do would be to ascribe them knowledge.</div>
-          <div class="notes">But ascribing them knowledge systematically generates false predictions about what they will do.</div>
-          <div class="notes">So it must be wrong to ascribe them knowledge.</div>
-          <div class="notes">In the first instance, �core knowledge� (or modular cognition, or implicit knowledge, or tacit knowledge) is just a label for whatever it is that is not knowledge but explains these capacities.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">adults, automaticity and limits</p>
-          <div class="notes">Developmental evidence for core knowledge is fragile:</div>
-          <div class="notes">it is always possble that the apparently incorrect predictions can be explained just by appeal to performance factors.</div>
-          <div class="notes">Now as I understand the science many attempts to do this have failed.</div>
-          <div class="notes">But for all we know this may be due only to the limited ingenuity of the researchers.</div>
-          <div class="notes">Reflection on adults provides us with a second line of converging evidence.</div>
-          <div class="notes">To say that a process is automatic is ...</div>
-          <div class="notes">We're looking for two features in adults:</div>
-          <div class="notes">(i) apparent conflict in what the adults know depending on whether the response is automatic or controlled,</div>
-          <div class="notes">and (ii) limits of adults' automatic competence match those of infants'.</div>
-          <div class="notes">We found some evidence this pattern in (a) colour; (b) mindreading; (c) number; (d) maybe causation and physical objects (representational momentum \citep{kozhevnikov:2001_impetus}).</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/unit_451/slide_cambridge_model_061.jpg" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">I'm illustrating this pattern with Low & Watts but be careful --- first look is spontaneous but may not reflect automatic processing.</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/unit_451/slide_cambridge_model_062.jpg" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/unit_451/slide_cambridge_model_063.jpg" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_core_knowledge_innate_transitions.jpg" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">This picture is significantly different from some competitors (but not Carey on number):</div>
-        <div class="notes">(1) because it shows we aren't done when we've explained the acquisition of core knowledge (contra e.g. Leslie, Baillargeon), and</div>
-        <div class="notes">(2) because it shows we can't hope to explain the acquisition of knowledge if we ignore core knowledge (contra e.g. Tomasello)</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div style="z-index:-22;" class="right-half-white"></div>
-  <div class="container_12">
-    <div class="grid_6 words left-half">
-      <div style="padding-right:1em;">
-        <p>core knowledge of</p>
-        <ul>
-          <li>actions</li>
-          <li>syntax (?)</li>
-          <li>minds</li>
-          <li>causal interactions</li>
-          <li>physical objects</li>
-          <li>colours (?)</li>
-          <li>(number)</li>
-          <li>(space)</li>
-        </ul>
-      </div>
-    </div>
-    <div class="grid_6 words invert right-half">
-      <div style="padding-left:1em;">
-        <p>What is core knowledge?</p>
-        <p>How does it relate to knowledge knowledge?</p>
-        <p>How does it relate to adult cognition?</p>
-        <p>How does it relate to nonhumans' cognition?</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">Core knowlegde: is it all one thing?</p>
-          <div class="notes">Patterns in the mindreading case seem different from patterns in the cases of physics and number.</div>
-          <div class="notes">Most people are committed to there being different stories for (a) colour (categorical perception); (b) syntax (tacit knowledge); and (c) physical objects.</div>
-          <div class="notes">I'm not sure.  I'm tempted to think that perceptual and motor cognition are at the root of these in every case, but this is a radical idea for which there is currenly very little evidence.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">What is innate in humans?</p>
-          <div class="notes">Conclusive evidence is rare, but that's not really an obstacle.</div>
-          <div class="notes">There's no reason to take radical anti-nativism as our starting point.</div>
-          <div class="notes">This question has two aspects: (i) what sort of thing; (ii) what particulars in which domains.</div>
-          <div class="notes">On (i), I like the idea that core knowledge is innate.</div>
-          <div class="notes">But we should be more careful and say at most that either core knowledge or something capable of priming the acquisition of core knowledge is innate.</div>
-          <div class="notes">On (ii), we looked at a paradigm case, knowledge of syntax.</div>
-          <div class="notes">In this case, we used a poverty of stimulus argument.</div>
-          <div class="notes">While the evidence is less clear in other cases, there is certainly reason to suppose that poverty of stimulus arguments might work for knowledge of colour and knowledge of physical objects.</div>
-          <div class="notes">But I also tried to argue that deciding this question probably isn't very important from our point of view.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">social interaction</p>
-          <div class="notes">We've seen that cooperative forms of social interaction appear early in development.</div>
-          <div class="notes">We studied pointing but there are examples involving helping and playing together too.</div>
-          <div class="notes">In seminars we've been considering two ideas:</div>
-          <div class="notes">(i) there is a form of cooperative social interaction abilities to engage in which are important for explaining the origins of knowledge of others' perspectives, for explaining the emergence of abilities to communicate by language, and norms.</div>
-          <div class="notes">(ii) these forms of cooperative social interaction involve a capacity for shared intentionality,</div>
-          <div class="notes">where shared intentionality is understood as the ability to share mental states.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_romantic_notions_of_sharing.jpg" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">We should characterise the abilities that underpin cooperative social interactions in infancy without appeal to romantic but mysterious ideas about sharing.</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="middle">
-      <div class="container_12">
-        <div class="notes">Need to re-think what's needed for social interaction if it's to explain things,</div>
-        <div class="notes">And the starting point for this is to reflect on abilities to understand action.</div>
-        <div class="grid_6 center">
-          <p>individual:</p>
-          <p>not</p>
-          <p>intentions</p>
-          <p>but</p>
-          <p>goals</p>
-        </div>
-        <div class="grid_6 center">
-          <p>joint:</p>
-          <p>not</p>
-          <p>intentions about intentions</p>
-          <p>but</p>
-          <p>common goals</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">core knowledge + social interaction</p>
-          <div class="notes">I like this picture:</div>
-          <div class="notes">core knowledge + social interaction  --> abilities to communicate --> knowledge knowledge</div>
-          <div class="notes">Two problems: (i) lack of evidence; (ii) creativity in acquisition of communication by language is hard to square with the prior absence of knowledge knowledge.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">I've done one of these pictures for colour and for knowledge of syntax.</div>
-          <div class="notes">This is speculative.</div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="916px" height="359px" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="background-color: rgb(0, 0, 0);">
-            <g transform="scale(0.786)">
-              <g transform="translate(0.5,0.5)">
-                <path d="M 392 306 L 383 301 L 426 233 L 418 228 L 447 210 L 443 244 L 435 238 Z" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
-                <rect x="232" y="157" width="150" height="90" rx="14" ry="14" fill="none" stroke="#ffffff" pointer-events="none"></rect>
-                <g transform="translate(234,161)">
-                  <switch>
-                    <foreignobject pointer-events="all" width="146" height="78" requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;">core knowledge of objects</div>
-                    </foreignobject>
-                    [Object]
-                  </switch>
-                </g>
-                <rect x="452" y="157" width="150" height="90" rx="14" ry="14" fill="none" stroke="#ffffff" pointer-events="none"></rect>
-                <g transform="translate(454,174)">
-                  <switch>
-                    <foreignobject pointer-events="all" width="146" height="52" requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;">ability to use tools</div>
-                    </foreignobject>
-                    [Object]
-                  </switch>
-                </g>
-                <path d="M 392 207 L 392 197 L 412 197 L 412 187 L 442 202 L 412 217 L 412 207 Z" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
-                <path d="M 383 103 L 392 98 L 435 166 L 443 160 L 447 194 L 418 176 L 426 171 Z" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
-                <rect x="232" y="47" width="150" height="90" rx="14" ry="14" fill="none" stroke="#ffffff" pointer-events="none"></rect>
-                <g transform="translate(234,51)">
-                  <switch>
-                    <foreignobject pointer-events="all" width="146" height="78" requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;">abilities for social interaction</div>
-                    </foreignobject>
-                    [Object]
-                  </switch>
-                </g>
-                <rect x="2" y="17" width="150" height="90" rx="14" ry="14" fill="none" stroke="#ffffff" pointer-events="none"></rect>
-                <g transform="translate(4,21)">
-                  <switch>
-                    <foreignobject pointer-events="all" width="146" height="78" requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;">core knowledge of mind</div>
-                    </foreignobject>
-                    [Object]
-                  </switch>
-                </g>
-                <rect x="232" y="267" width="150" height="90" rx="14" ry="14" fill="none" stroke="#ffffff" stroke-dasharray="3 3" pointer-events="none"></rect>
-                <g transform="translate(234,297)">
-                  <switch>
-                    <foreignobject pointer-events="all" width="146" height="26" requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;">...</div>
-                    </foreignobject>
-                    [Object]
-                  </switch>
-                </g>
-                <path d="M 160 70 L 163 61 L 196 73 L 200 64 L 223 88 L 189 92 L 193 83 Z" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
-                <rect x="652" y="157" width="150" height="90" rx="14" ry="14" fill="none" stroke="#ffffff" pointer-events="none"></rect>
-                <g transform="translate(654,161)">
-                  <switch>
-                    <foreignobject pointer-events="all" width="146" height="78" requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;">altered experience of the body<br/></div>
-                    </foreignobject>
-                    [Object]
-                  </switch>
-                </g>
-                <path d="M 612 206 L 612 196 L 632 196 L 632 186 L 662 201 L 632 216 L 632 206 Z" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
-                <rect x="564" y="2" width="150" height="90" rx="14" ry="14" fill="none" stroke="#ffffff" pointer-events="none"></rect>
-                <g transform="translate(566,19)">
-                  <switch>
-                    <foreignobject pointer-events="all" width="146" height="52" requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;">reflection on this</div>
-                    </foreignobject>
-                    [Object]
-                  </switch>
-                </g>
-                <path d="M 482 127 L 782 127" fill="none" stroke="#ffffff" stroke-width="4" stroke-miterlimit="10" pointer-events="none"></path>
-                <rect x="764" y="2" width="150" height="90" rx="14" ry="14" fill="none" stroke="#ffffff" pointer-events="none"></rect>
-                <g transform="translate(766,6)">
-                  <switch>
-                    <foreignobject pointer-events="all" width="146" height="78" requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;">knowledge knowledge of objects</div>
-                    </foreignobject>
-                    [Object]
-                  </switch>
-                </g>
-                <path d="M 724 52 L 724 42 L 744 42 L 744 32 L 774 47 L 744 62 L 744 52 Z" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
-                <rect x="2" y="127" width="150" height="90" rx="14" ry="14" fill="none" stroke="#ffffff" pointer-events="none"></rect>
-                <g transform="translate(4,131)">
-                  <switch>
-                    <foreignobject pointer-events="all" width="146" height="78" requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;">core knowledge of action</div>
-                    </foreignobject>
-                    [Object]
-                  </switch>
-                </g>
-                <path d="M 163 168 L 156 161 L 200 117 L 193 110 L 225 99 L 214 131 L 207 124 Z" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
-              </g>
-            </g>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">development as rediscovery</p>
-          <div class="notes">Social interaction transforms which abilities core knowledge makes possible, and it is reflection on these abilities and the experiences they case that is the ultimate source of our knowledge.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">big idea</p>
-          <div class="notes">Well, maybe there is a big idea after all.</div>
-          <div class="notes">(I'm hesitant to mention this because it's not well established and, anyway, you should find your own big idea. But ...)</div>
-          <div class="notes">Through social interaction you are able to rediscover what is in some sense already encoded in your core knowledge.</div>
-          <div class="notes">That, anyway, is one idea about how humans come to know about objects, causes, minds and the rest.</div>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
     </div>
   </body>

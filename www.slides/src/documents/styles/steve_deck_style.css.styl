@@ -34,15 +34,26 @@ default_text_shadow()
 default_text_shadow_invert()
   text-shadow: 0 0 2px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white, 0 0 5px white, 0 0 5px white
 
+
+background_color()
+  black
+text_color()
+  white
+
+.background-color
+  background-color background_color()
+.text-color
+  color text_color()
+
 /**
  * overwrite core defaults
  */
 noinvert_text()
-  color: white
+  color text_color()
   default_text_shadow()
 
 invert_text()
-  color: black
+  color background_color()
   default_text_shadow_invert()
 
 .deck-container
