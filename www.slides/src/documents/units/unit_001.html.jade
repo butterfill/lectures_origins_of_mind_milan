@@ -19,8 +19,7 @@ include ../../../fragments/slide_mixins
 section.slide
   .words
     p.middle.center the question
-    .notes This module is based on a simple question.
-    .notes The question is, 
+    .notes This course is based on a simple question. The question is, 
     .handout \textbf{Question}
       .notes: :t() 
         How do humans first come to know  about---and to knowingly manipulate---objects, 
@@ -32,10 +31,10 @@ section.slide
 
 section.slide
   img.bkg(src='/img/DSC_AB_8736_bw.JPG')
-  .notes At the outset we know nothing, or not very much.  (Like Lucas here.)
-  .notes Sometime later we do know some things.
-  .notes How does the transition occur?
-
+  .notes: :t()
+    At the outset we know nothing, or not very much.  (Like Lucas here.)
+    Sometime later we do know some things.
+    How does the transition occur?
 
 
 section.slide
@@ -79,10 +78,8 @@ section.slide
         p.blur3.right (Fodor 1975, p.\ 198)
     mixin show('.step3')
     mixin blur('.blur3')
-    mixin unblur('.unblur3')
-    mixin invert('.unblur3')
+    +unblur_('.unblur3')
+    +invert('.unblur3')
     .notes Fodor mentions cognitive psychologists rather than philosophers.  We will need to face up to the question of why philosophers are asking this question about the origins of knowledge, why is isn't just a scientific question.  But that's something for later.
-    mixin uninvert('.unblur3')
-    mixin blur('.unblur3')
 
 

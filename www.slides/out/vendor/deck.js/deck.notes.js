@@ -576,6 +576,9 @@ only toggle the notes panel for this cloned window.
 
   }());
 
+
+
+
   /*
     jQuery.deck('showNotes')
     
@@ -685,8 +688,8 @@ only toggle the notes panel for this cloned window.
 			var $slide = $note.parents('.slide').first();
 
 			// but occasionally we want to assign note to a prior sibling (because of the way we use anim and mixins)
-			previous = $note.siblings().splice(0,$note.index());
-			$previous_slide = $(previous).filter('.slide').last();
+			var previous = $note.siblings().splice(0,$note.index());
+			var $previous_slide = $(previous).filter('.slide').last();
 			if( $previous_slide.length > 0 ) {
 				$slide = $previous_slide;
 			}
@@ -696,7 +699,7 @@ only toggle the notes panel for this cloned window.
 				$notesContainer.append('<div class="divider for-'+last_slide_id+'">--------</div>')
 			}
 			if( last_slide_id != -1 && last_slide_id != slide_id ) {
-				$notesContainer.append('<div class="notes-header for-'+slide_id+'">Notes for '+slide_id+':</div>');
+				// $notesContainer.append('<div class="notes-header for-'+slide_id+'">Notes for '+slide_id+':</div>');
 				$notesContainer.append('<div class="notes-header-tex for-'+slide_id+'">&nbsp;</div>');
 				$notesContainer.append('<div class="notes-header-tex for-'+slide_id+'">&nbsp;</div>');
 				//tex requires that we esacpe _ characters
@@ -706,6 +709,10 @@ only toggle the notes panel for this cloned window.
 			//insert note preserving classes
 			var cls = $note.attr('class') + (" for-"+slide_id);
 			$notesContainer.append('<div class="'+cls+'">'+$note.html()+'</div>');
+			// add in a blank line (for latex paragraph) unless .ctd is present
+			if( !$notes.eq(idx+1).hasClass('ctd') ) {
+				$notesContainer.append('<div class="notes for-'+slide_id+'">&nbsp;</div>');
+			}
 			last_slide_id = slide_id;
 		});
 
