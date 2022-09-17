@@ -20,7 +20,7 @@ include ../../../fragments/slide_mixins
 
 +slide({bkg:'unit_421/slide_cambridge_model_003.jpg'})
   .handout Are human adults’ abilities to represent beliefs automatic?
-  .handout There is evidence for \citep{kovacs_social_2010,Schneider:2011fk} and against \citep{apperly:2008_back,apperly:2010_limits}. 
+  .handout There is evidence for \citep{kovacs_social_2010,Schneider:2011fk} and against \citep{apperly:2008_back,apperly_why_2010}. 
 
 
 - var img_nos = range(4,19)
